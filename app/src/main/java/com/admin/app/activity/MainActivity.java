@@ -44,7 +44,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
     private GrabFragment mGrabFragment;
     private SelfFragment mSelfFragment;
     private FragmentManager mFragmentManager;
-    private boolean isOpen = false;
+    private boolean isOpen = false;//是否有打开菜单,默认关闭
+    private long firstTime = 0;//点击退出时记录时间
 
     public static void launch(Activity activity) {
         Intent intent = new Intent(activity, MainActivity.class);
@@ -208,9 +209,6 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         index = savedInstanceState.getInt(ConstantValue.MAIN_INDEX);
     }
-
-    //点击退出时记录时间
-    private long firstTime = 0;
 
     @Override
     public void onBackPressed() {

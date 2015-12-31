@@ -7,5 +7,5 @@ package com.admin.app.constant;
  * 描述：
  */
 public enum PreferencesKey {
-    IS_FIRST//第一次使用
+    FIRST_USE//第一次使用
 }

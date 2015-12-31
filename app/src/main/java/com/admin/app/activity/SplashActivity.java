@@ -39,23 +39,47 @@ public class SplashActivity extends BaseActivity {
     protected void processLogic(Bundle savedInstanceState) {
         if (!NetUtils.isConnected(this)) {//没有网络
             openNetSetting();
-        } else {
-            utils = PreferencesUtils.instance();
-            boolean isFirst = utils.getBoolean(PreferencesKey.IS_FIRST);
-            if (isFirst) {
-                toGuide();
-            } else {
-                if (!checkVersion()) {//没有新版本
-                    delayToMain();
-                } else {//处理更新
-
-                }
-            }
+            return;
         }
+        utils = PreferencesUtils.instance();
+        boolean isFirst = utils.getBoolean(PreferencesKey.FIRST_USE);
+        if (isFirst) {
+            toGuide();
+            return;
+        }
+        if (checkVersion()) {//处理更新
+            return;
+        }
+        //没有新版本
+        delayToMain();
+    }
+
+    private void openNetSetting() {
+        new AlertDialogWrapper.Builder(this).setTitle("提示").setMessage("是否开启网络?")
+                .setPositiveButton("是", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        NetUtils.openNetSetting(SplashActivity.this);
+                        dialog.dismiss();
+                        finish();
+                    }
+                })
+                .setNegativeButton("否", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        MainActivity.launch(SplashActivity.this);
+                        dialog.dismiss();
+                        finish();
+                    }
+                }).create().show();
     }
 
     private void toGuide() {
 
+    }
+
+    private boolean checkVersion() {
+        return false;
     }
 
     private void delayToMain() {
@@ -66,27 +90,5 @@ public class SplashActivity extends BaseActivity {
                 finish();
             }
         }, 2000);
-    }
-
-    private boolean checkVersion() {
-        return false;
-    }
-
-    private void openNetSetting() {
-        new AlertDialogWrapper.Builder(this).setTitle("提示").setMessage("是否开启网络?").setPositiveButton("是", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                NetUtils.openNetSetting(SplashActivity.this);
-                dialog.dismiss();
-                finish();
-            }
-        }).setNegativeButton("否", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                MainActivity.launch(SplashActivity.this);
-                dialog.dismiss();
-                finish();
-            }
-        }).create().show();
     }
 }

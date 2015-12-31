@@ -13,7 +13,7 @@
 
 
     <TextView
-        android:id="@+id/header_month"
+        android:id="@+id/home_header_month"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -24,7 +24,7 @@
         android:textSize="10sp"/>
 
     <TextView
-        android:id="@+id/header_day"
+        android:id="@+id/home_header_day"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -36,7 +36,7 @@
         android:textStyle="bold"/>
 
     <TextView
-        android:id="@+id/header_year"
+        android:id="@+id/home_header_year"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -47,7 +47,7 @@
         android:textSize="9sp"/>
 
     <com.admin.app.view.CircleImageView
-        android:id="@+id/header_item1"
+        android:id="@+id/home_header_item1"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginLeft="50dp"
@@ -58,7 +58,7 @@
         app:civ_border_width="1dp"/>
 
     <com.admin.app.view.CircleImageView
-        android:id="@+id/header_item2"
+        android:id="@+id/home_header_item2"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginLeft="75dp"
@@ -69,7 +69,7 @@
         app:civ_border_width="1dp"/>
 
     <com.admin.app.view.CircleImageView
-        android:id="@+id/header_item3"
+        android:id="@+id/home_header_item3"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:layout_gravity="right"
@@ -81,7 +81,7 @@
         app:civ_border_width="1dp"/>
 
     <com.admin.app.view.CircleImageView
-        android:id="@+id/header_item4"
+        android:id="@+id/home_header_item4"
         android:layout_width="45dp"
         android:layout_height="45dp"
         android:layout_gravity="right"
