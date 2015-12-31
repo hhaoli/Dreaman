@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="205dp"
+        android:background="@mipmap/home_header_bg"
+        android:contentDescription="@null"
+        android:scaleType="centerInside"/>
+
+
+    <TextView
+        android:id="@+id/header_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="148.95dp"
+        android:gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/gray"
+        android:textSize="10sp"/>
+
+    <TextView
+        android:id="@+id/header_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="163.8dp"
+        android:gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/header_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="190dp"
+        android:gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/white"
+        android:textSize="9sp"/>
+
+    <com.admin.app.view.CircleImageView
+        android:id="@+id/header_item1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:src="@color/shadow_bg"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="1dp"/>
+
+    <com.admin.app.view.CircleImageView
+        android:id="@+id/header_item2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="110dp"
+        android:src="@color/shadow_bg"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="1dp"/>
+
+    <com.admin.app.view.CircleImageView
+        android:id="@+id/header_item3"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_gravity="right"
+        android:layout_marginEnd="120dp"
+        android:layout_marginRight="120dp"
+        android:layout_marginTop="40dp"
+        android:src="@color/shadow_bg"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="1dp"/>
+
+    <com.admin.app.view.CircleImageView
+        android:id="@+id/header_item4"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_gravity="right"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="100dp"
+        android:src="@color/shadow_bg"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="1dp"/>
+
+
+</FrameLayout>

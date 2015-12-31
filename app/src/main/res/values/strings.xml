@@ -1,4 +1,7 @@
 <resources>
-    <string name="app_name">My Application</string>
-    <string name="action_settings">Settings</string>
+    <string name="app_name">够不购</string>
+    <string name="home">首页</string>
+    <string name="together">一起买</string>
+    <string name="grab">九点抢</string>
+    <string name="self">我的</string>
 </resources>
