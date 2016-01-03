@@ -53,13 +53,6 @@ public abstract class BaseActivity extends AppCompatActivity {
         }
     }
 
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        //关闭窗体动画显示
-        overridePendingTransition(0, android.R.anim.fade_out);
-    }
-
     /**
      * 设置布局
      */

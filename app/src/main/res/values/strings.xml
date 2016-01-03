@@ -4,4 +4,16 @@
     <string name="together">一起买</string>
     <string name="grab">九点抢</string>
     <string name="self">我的</string>
+    <string name="I_started_to_buy_together">我发起的一起买</string>
+    <string name="current_assets">当前资产</string>
+    <string name="today">今日</string>
+    <string name="current">当前</string>
+    <string name="join">加入</string>
+    <string name="obtain">获得</string>
+    <string name="participate">参与</string>
+    <string name="friends">好友</string>
+    <string name="ranking">排名</string>
+    <string name="qr_code">扫一扫</string>
+    <string name="shopping_cart">购物车</string>
+    <string name="news">消息</string>
 </resources>

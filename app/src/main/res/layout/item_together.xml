@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="4dp"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/item_together_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:src="@color/blue"/>
+
+        <TextView
+            android:id="@+id/item_together_name"
+            style="@style/TextView"
+            android:layout_alignTop="@+id/item_together_icon"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/item_together_icon"
+            android:layout_toRightOf="@+id/item_together_icon"
+            android:text="@string/app_name"
+            android:textColor="@color/gray"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/item_together_beans"
+            style="@style/TextView"
+            android:layout_alignBottom="@+id/item_together_icon"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/item_together_icon"
+            android:layout_toRightOf="@+id/item_together_icon"
+            android:drawableLeft="@mipmap/beans_gray"
+            android:drawablePadding="5dp"
+            android:drawableStart="@mipmap/beans_gray"
+            android:text="@string/app_name"
+            android:textColor="@color/gray_dark"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:weightSum="2.0">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/gray_border"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_together_icon_money"
+                style="@style/TextView"/>
+
+            <ImageView
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@color/gray_light"/>
+
+            <TextView
+                android:id="@+id/item_together_money"
+                style="@style/TextView"
+                android:layout_margin="5dp"
+                android:text="@string/app_name"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/gray_border"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_together_icon_number"
+                style="@style/TextView"/>
+
+            <ImageView
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@color/gray_light"/>
+
+            <TextView
+                android:id="@+id/item_together_number"
+                style="@style/TextView"
+                android:layout_margin="5dp"
+                android:text="@string/app_name"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

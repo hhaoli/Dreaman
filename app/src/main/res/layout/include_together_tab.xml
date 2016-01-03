@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <TextView
+            android:id="@+id/together_friends"
+            style="@style/TogetherTab"
+            android:drawableTop="@mipmap/icon_friends"
+            android:text="@string/friends"/>
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:src="@color/gray_light"/>
+
+        <TextView
+            android:id="@+id/together_ranking"
+            style="@style/TogetherTab"
+            android:drawableTop="@mipmap/icon_ranking"
+            android:text="@string/ranking"/>
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:src="@color/gray_light"/>
+
+        <TextView
+            android:id="@+id/together_qr_code"
+            style="@style/TogetherTab"
+            android:drawableTop="@mipmap/icon_qr_code"
+            android:text="@string/qr_code"/>
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:src="@color/gray_light"/>
+
+        <TextView
+            android:id="@+id/together_shopping_cart"
+            style="@style/TogetherTab"
+            android:drawableTop="@mipmap/icon_shopping_cart"
+            android:text="@string/shopping_cart"/>
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:src="@color/gray_light"/>
+
+        <TextView
+            android:id="@+id/together_news"
+            style="@style/TogetherTab"
+            android:drawableTop="@mipmap/icon_news"
+            android:text="@string/news"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:src="@color/gray_light"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/I_started_to_buy_together"
+        android:textColor="@color/gray"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:src="@color/gray_light"/>
+</LinearLayout>

@@ -23,6 +23,7 @@ import com.admin.app.fragment.HomeFragment;
 import com.admin.app.fragment.SelfFragment;
 import com.admin.app.fragment.TogetherFragment;
 import com.admin.app.util.AnimatorUtils;
+import com.admin.app.util.ToastUtils;
 import com.admin.app.view.CircleImageView;
 
 import java.util.ArrayList;
@@ -165,19 +166,19 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
                 break;
             case R.id.menu_category:
                 hideMenu();
-                Toast.makeText(this, "分类", Toast.LENGTH_SHORT).show();
+                ToastUtils.show("分类");
                 break;
             case R.id.menu_search:
                 hideMenu();
-                Toast.makeText(this, "搜索", Toast.LENGTH_SHORT).show();
+                ToastUtils.show("搜索");
                 break;
             case R.id.menu_hot:
                 hideMenu();
-                Toast.makeText(this, "热门", Toast.LENGTH_SHORT).show();
+                ToastUtils.show("热门");
                 break;
             case R.id.menu_around:
                 hideMenu();
-                Toast.makeText(this, "逛逛", Toast.LENGTH_SHORT).show();
+                ToastUtils.show("逛逛");
                 break;
         }
     }
@@ -212,24 +213,22 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
 
     @Override
     public void onBackPressed() {
-//        super.onBackPressed();
-        if (!isOpen) {
+        if (isOpen) {
             hideMenu();
             return;
         }
         long secondTime = System.currentTimeMillis();
         //如果两次按键的时间间隔大于1000毫秒,则不退出
         if (secondTime - firstTime > 1000) {
-            Snackbar.make(mMenuOpen, "再按一次退出客户端", Snackbar.LENGTH_SHORT).show();
+            ToastUtils.show("再按一次退出客户端");
             firstTime = secondTime;//更新firstTime
         } else {
             exitApp();
         }
     }
 
-
     private void showMenu() {
-        isOpen = false;
+        isOpen = true;
         mMenu.setVisibility(View.VISIBLE);
         List<Animator> animList = new ArrayList<>();
         Animator anim = ObjectAnimator.ofPropertyValuesHolder(mMenuClose, AnimatorUtils.rotation(0f, 225f));
@@ -246,7 +245,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
     }
 
     private void hideMenu() {
-        isOpen = true;
+        isOpen = false;
         List<Animator> animList = new ArrayList<>();
         Animator anim = ObjectAnimator.ofPropertyValuesHolder(mMenuClose, AnimatorUtils.rotation(225f, 0f));
         animList.add(anim);

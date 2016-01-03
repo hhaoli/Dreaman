@@ -5,9 +5,11 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.admin.app.R;
+import com.admin.app.adapter.HomeAdapter;
+import com.admin.app.util.DateUtils;
+import com.admin.app.util.ToastUtils;
 import com.admin.app.view.CircleImageView;
 
 /**
@@ -26,6 +28,7 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
     private CircleImageView mItem3;
     private CircleImageView mItem4;
     private RecyclerView mRecyclerView;
+    String[] mStrings = {"一 月Jan.", "二 月Feb.", "三 月Mar.", "四 月Apr.", "五 月May.", "六 月Jun.", "七 月Jul.", "八 月Aug.", "九 月Sep.", "十 月Oct.", "十一月Nov.", "十二月Dec."};
 
 
     @Override
@@ -55,9 +58,15 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
 
     @Override
     protected void processLogic(Bundle savedInstanceState) {
+        String[] date = DateUtils.getDate(System.currentTimeMillis());
+        mYear.setText(date[0]);
+        mMonth.setText(date[1]);
+        mDay.setText(date[2]);
         LinearLayoutManager manager = new LinearLayoutManager(mActivity);
         manager.setOrientation(LinearLayoutManager.VERTICAL);
         mRecyclerView.setLayoutManager(manager);
+        HomeAdapter adapter = new HomeAdapter(getContext(), mStrings);
+        mRecyclerView.setAdapter(adapter);
     }
 
     @Override
@@ -69,16 +78,16 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.home_header_item1:
-                Toast.makeText(mActivity, "item1", Toast.LENGTH_SHORT).show();
+                ToastUtils.show("item1");
                 break;
             case R.id.home_header_item2:
-                Toast.makeText(mActivity, "item2", Toast.LENGTH_SHORT).show();
+                ToastUtils.show("item2");
                 break;
             case R.id.home_header_item3:
-                Toast.makeText(mActivity, "item3", Toast.LENGTH_SHORT).show();
+                ToastUtils.show("item3");
                 break;
             case R.id.home_header_item4:
-                Toast.makeText(mActivity, "item4", Toast.LENGTH_SHORT).show();
+                ToastUtils.show("item4");
                 break;
         }
     }
