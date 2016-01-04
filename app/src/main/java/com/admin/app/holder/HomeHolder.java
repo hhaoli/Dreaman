@@ -3,10 +3,10 @@ package com.admin.app.holder;
 import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
-import android.widget.Switch;
 import android.widget.TextView;
 
 import com.admin.app.R;
+import com.admin.app.util.IconUtils;
 import com.admin.app.view.CircleImageView;
 
 /**
@@ -36,26 +36,6 @@ public class HomeHolder extends BaseRecyclerViewHolder<String> {
     @Override
     protected void onBindData(final String s, int position) {
         mText.setText(s);
-        int index = position % 6;
-        switch (index) {
-            case 0:
-                mIcon.setImageResource(R.mipmap.icon_home_item6);
-                break;
-            case 1:
-                mIcon.setImageResource(R.mipmap.icon_home_item1);
-                break;
-            case 2:
-                mIcon.setImageResource(R.mipmap.icon_home_item2);
-                break;
-            case 3:
-                mIcon.setImageResource(R.mipmap.icon_home_item3);
-                break;
-            case 4:
-                mIcon.setImageResource(R.mipmap.icon_home_item4);
-                break;
-            case 5:
-                mIcon.setImageResource(R.mipmap.icon_home_item5);
-                break;
-        }
+        mIcon.setImageResource(IconUtils.getItemHome(position));
     }
 }

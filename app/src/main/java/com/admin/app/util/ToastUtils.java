@@ -23,4 +23,14 @@ public class ToastUtils {
         }
         toast.show();
     }
+
+    public static void show(int resId) {
+        if (toast == null) {
+            toast = Toast.makeText(UIUtils.getContext(), UIUtils.getString(resId), Toast.LENGTH_SHORT);
+        } else {
+            toast.setText(UIUtils.getString(resId));
+            toast.setDuration(Toast.LENGTH_SHORT);
+        }
+        toast.show();
+    }
 }
