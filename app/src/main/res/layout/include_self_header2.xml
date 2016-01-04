@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:id="@+id/self_header2"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:visibility="gone"
+             android:background="@mipmap/self_header_bg">
+
+    <com.admin.app.view.CircleImageView
+        android:id="@+id/self_header2_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:src="@color/white"
+        app:civ_border_color="@color/blue"
+        app:civ_border_width="2dp"/>
+
+    <TextView
+        android:id="@+id/self_header2_name"
+        style="@style/TextView"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="95dp"
+        android:text="@string/login_or_register"
+        android:textColor="@color/white"
+        android:textSize="12sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:background="@color/translucent_bg"
+        android:orientation="horizontal"
+        android:weightSum="3.0">
+
+        <LinearLayout
+            android:id="@+id/self_header2_btn_product"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:scaleType="centerInside"
+                android:src="@mipmap/icon_white_heart"/>
+
+            <TextView
+                style="@style/TextView"
+                android:layout_marginTop="2dp"
+                android:text="@string/product_collection"
+                android:textColor="@color/white"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:src="@color/translucent_bg"/>
+
+        <LinearLayout
+            android:id="@+id/self_header2_btn_shop"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:scaleType="centerInside"
+                android:src="@mipmap/icon_white_stars"/>
+
+            <TextView
+                style="@style/TextView"
+                android:layout_marginTop="2dp"
+                android:text="@string/shop_favorites"
+                android:textColor="@color/white"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:src="@color/translucent_bg"/>
+
+        <LinearLayout
+            android:id="@+id/self_header2_btn_history"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@null"
+                android:scaleType="centerInside"
+                android:src="@mipmap/icon_white_note"/>
+
+            <TextView
+                style="@style/TextView"
+                android:layout_marginTop="2dp"
+                android:text="@string/history"
+                android:textColor="@color/white"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

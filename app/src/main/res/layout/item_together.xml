@@ -28,7 +28,6 @@
             android:layout_marginTop="5dp"
             android:layout_toEndOf="@+id/item_together_icon"
             android:layout_toRightOf="@+id/item_together_icon"
-            android:text="@string/app_name"
             android:textColor="@color/gray"
             android:textSize="12sp"/>
 
@@ -44,7 +43,6 @@
             android:drawableLeft="@mipmap/beans_gray"
             android:drawablePadding="5dp"
             android:drawableStart="@mipmap/beans_gray"
-            android:text="@string/app_name"
             android:textColor="@color/gray_dark"
             android:textSize="12sp"/>
     </RelativeLayout>
@@ -52,11 +50,14 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
         android:orientation="horizontal"
         android:weightSum="2.0">
 
         <LinearLayout
+            android:id="@+id/item_together_btn_reduce"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="2dp"
@@ -66,25 +67,31 @@
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
-            <TextView
+            <ImageView
                 android:id="@+id/item_together_icon_money"
-                style="@style/TextView"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:contentDescription="@null"
+                android:scaleType="centerInside"/>
 
             <ImageView
                 android:layout_width="1px"
                 android:layout_height="match_parent"
                 android:layout_marginBottom="5dp"
                 android:layout_marginTop="5dp"
+                android:contentDescription="@null"
                 android:src="@color/gray_light"/>
 
             <TextView
                 android:id="@+id/item_together_money"
                 style="@style/TextView"
-                android:layout_margin="5dp"
-                android:text="@string/app_name"/>
+                android:layout_margin="5dp"/>
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/item_together_btn_level"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="2dp"
@@ -94,9 +101,14 @@
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
-            <TextView
+            <ImageView
                 android:id="@+id/item_together_icon_number"
-                style="@style/TextView"/>
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:contentDescription="@null"
+                android:scaleType="centerInside"/>
 
             <ImageView
                 android:layout_width="1px"
@@ -108,8 +120,7 @@
             <TextView
                 android:id="@+id/item_together_number"
                 style="@style/TextView"
-                android:layout_margin="5dp"
-                android:text="@string/app_name"/>
+                android:layout_margin="5dp"/>
         </LinearLayout>
 
     </LinearLayout>

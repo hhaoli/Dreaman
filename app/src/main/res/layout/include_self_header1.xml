@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@+id/self_header1"
+             xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@mipmap/self_header_bg">
+
+    <com.admin.app.view.CircleImageView
+        android:id="@+id/self_header1_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:src="@color/white"
+        app:civ_border_color="@color/blue"
+        app:civ_border_width="2dp"/>
+
+    <TextView
+        android:id="@+id/self_header1_name"
+        style="@style/TextView"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="95dp"
+        android:text="@string/app_name"
+        android:textColor="@color/yellow"
+        android:textSize="12sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:background="@color/translucent_bg"
+        android:orientation="horizontal"
+        android:weightSum="3.0">
+
+        <LinearLayout
+            android:id="@+id/self_header1_btn_product"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/self_header1_tv_product"
+                style="@style/TextView"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+
+            <TextView
+                style="@style/TextView"
+                android:layout_marginTop="2dp"
+                android:text="@string/product_collection"
+                android:textColor="@color/white"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:src="@color/translucent_bg"/>
+
+        <LinearLayout
+            android:id="@+id/self_header1_btn_shop"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/self_header1_tv_shop"
+                style="@style/TextView"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+
+            <TextView
+                style="@style/TextView"
+                android:layout_marginTop="2dp"
+                android:text="@string/shop_favorites"
+                android:textColor="@color/white"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:src="@color/translucent_bg"/>
+
+        <LinearLayout
+            android:id="@+id/self_header1_btn_history"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/self_header1_tv_history"
+                style="@style/TextView"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+
+            <TextView
+                style="@style/TextView"
+                android:layout_marginTop="2dp"
+                android:text="@string/history"
+                android:textColor="@color/white"
+                android:textSize="10sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

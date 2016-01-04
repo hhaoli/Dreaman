@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/include_self_header2"/>
+
+            <include layout="@layout/include_self_header1"/>
+
+        </FrameLayout>
+
+        <com.admin.app.view.ItemView
+            android:id="@+id/self_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:item_icon="@mipmap/icon_order"
+            app:item_left_text="@string/my_order"
+            app:item_right_text="@string/view_all"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:weightSum="4.0">
+
+            <TextView
+                android:id="@+id/self_payment"
+                style="@style/TogetherTab"
+                android:drawableTop="@mipmap/icon_loan"
+                android:text="@string/pending_payment"/>
+
+            <TextView
+                android:id="@+id/self_used"
+                style="@style/TogetherTab"
+                android:drawableTop="@mipmap/icon_loan"
+                android:text="@string/to_be_used"/>
+
+            <TextView
+                android:id="@+id/self_evaluated"
+                style="@style/TogetherTab"
+                android:drawableTop="@mipmap/icon_loan"
+                android:text="@string/to_be_evaluated"/>
+
+            <TextView
+                android:id="@+id/self_return"
+                style="@style/TogetherTab"
+                android:drawableTop="@mipmap/icon_loan"
+                android:text="@string/return_of_goods"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:src="@color/gray_light"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="12dp"
+            android:src="@color/gray_light"/>
+
+        <com.admin.app.view.ItemView
+            android:id="@+id/self_coins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:item_icon="@mipmap/beans_yellow"
+            app:item_left_text="@string/my_bean_coins"/>
+
+        <com.admin.app.view.ItemView
+            android:id="@+id/self_ticket"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:item_icon="@mipmap/icon_ticket"
+            app:item_left_text="@string/my_ticket"/>
+
+        <com.admin.app.view.ItemView
+            android:id="@+id/self_friend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:item_icon="@mipmap/icon_friend"
+            app:item_left_text="@string/my_good_friend"/>
+
+        <com.admin.app.view.ItemView
+            android:id="@+id/self_feedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:item_icon="@mipmap/icon_feedback"
+            app:item_left_text="@string/recommend_feedback"/>
+
+        <com.admin.app.view.ItemView
+            android:id="@+id/self_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:item_icon="@mipmap/icon_setting"
+            app:item_left_text="@string/setting"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginTop="12dp"
+            android:src="@color/gray_light"/>
+
+        <com.admin.app.view.ItemView
+            android:id="@+id/self_business"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            app:item_icon="@mipmap/icon_business"
+            app:item_left_text="@string/business_background"/>
+    </LinearLayout>
+</ScrollView>

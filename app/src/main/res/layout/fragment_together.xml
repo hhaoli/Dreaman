@@ -14,16 +14,17 @@
             layout="@layout/include_together_header"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-            app:layout_scrollFlags="scroll|snap|enterAlwaysCollapsed"/>
+            app:layout_scrollFlags="scroll|snap|enterAlwaysCollapsed"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
-        <include
-            layout="@layout/include_together_tab"/>
+        <include layout="@layout/include_together_tab"/>
 
     </android.support.design.widget.AppBarLayout>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/together_recycler_view"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
