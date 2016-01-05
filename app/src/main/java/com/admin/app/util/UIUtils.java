@@ -5,6 +5,7 @@ import android.content.res.Resources;
 import android.os.Build;
 import android.os.Handler;
 import android.support.v4.content.ContextCompat;
+import android.util.TypedValue;
 
 import com.admin.app.MyApplication;
 
@@ -68,5 +69,10 @@ public class UIUtils {
      */
     public static void removeCallbacks(Runnable task) {
         getMainHandler().removeCallbacks(task);
+    }
+
+    public static int dpToPx(float dp, Resources resources){
+        float px = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, resources.getDisplayMetrics());
+        return (int) px;
     }
 }

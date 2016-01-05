@@ -22,4 +22,10 @@
         <attr name="item_left_size" format="dimension"/>
         <attr name="item_right_size" format="dimension"/>
     </declare-styleable>
+
+    <declare-styleable name="SwitchButton">
+        <attr name="bmWidth" format="dimension"/>
+        <attr name="bmHeight" format="dimension"/>
+    </declare-styleable>
+
 </resources>

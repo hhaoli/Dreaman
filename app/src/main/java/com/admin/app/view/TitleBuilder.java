@@ -5,6 +5,7 @@ import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.admin.app.R;
@@ -17,7 +18,7 @@ import com.admin.app.R;
  */
 public class TitleBuilder {
 
-    private Toolbar toolbar;
+    private RelativeLayout toolbar;
     private TextView title;
     private TextView tv_left;
     private TextView tv_right;
@@ -25,7 +26,7 @@ public class TitleBuilder {
     private ImageView iv_right;
 
     public TitleBuilder(Activity activity) {
-        toolbar = (Toolbar) activity.findViewById(R.id.toolbar);
+        toolbar = (RelativeLayout) activity.findViewById(R.id.toolbar);
         title = (TextView) toolbar.findViewById(R.id.toolbar_title);
         tv_left = (TextView) toolbar.findViewById(R.id.toolbar_tv_left);
         tv_right = (TextView) toolbar.findViewById(R.id.toolbar_tv_right);
@@ -34,7 +35,7 @@ public class TitleBuilder {
     }
 
     public TitleBuilder(View view) {
-        toolbar = (Toolbar) view.findViewById(R.id.toolbar);
+        toolbar = (RelativeLayout) view.findViewById(R.id.toolbar);
         title = (TextView) toolbar.findViewById(R.id.toolbar_title);
         tv_left = (TextView) toolbar.findViewById(R.id.toolbar_tv_left);
         tv_right = (TextView) toolbar.findViewById(R.id.toolbar_tv_right);
@@ -94,9 +95,5 @@ public class TitleBuilder {
             tv_right.setOnClickListener(listener);
         }
         return this;
-    }
-
-    public Toolbar build() {
-        return toolbar;
     }
 }

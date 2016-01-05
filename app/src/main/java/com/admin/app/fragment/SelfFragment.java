@@ -6,6 +6,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.admin.app.R;
+import com.admin.app.activity.LoginActivity;
 import com.admin.app.util.ToastUtils;
 import com.admin.app.view.CircleImageView;
 import com.admin.app.view.ItemView;
@@ -146,6 +147,7 @@ public class SelfFragment extends BaseFragment implements View.OnClickListener {
                 ToastUtils.show(R.string.return_of_goods);
                 break;
             case R.id.self_order:
+                LoginActivity.launch(mActivity);
                 ToastUtils.show("0");
                 break;
             case R.id.self_coins:
