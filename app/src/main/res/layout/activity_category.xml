@@ -18,10 +18,10 @@
             android:orientation="vertical">
 
             <RadioButton
-                android:id="@+id/category_tabs1"
+                android:id="@+id/category_food"
                 style="@style/CategoryTab"
                 android:checked="true"
-                android:text="美食"/>
+                android:text="@string/food"/>
 
             <ImageView
                 android:layout_width="match_parent"
@@ -30,9 +30,9 @@
                 android:src="@color/gray"/>
 
             <RadioButton
-                android:id="@+id/category_tabs2"
+                android:id="@+id/category_entertainment"
                 style="@style/CategoryTab"
-                android:text="休闲娱乐"/>
+                android:text="@string/leisure_and_entertainment"/>
 
             <ImageView
                 android:layout_width="match_parent"
@@ -41,9 +41,9 @@
                 android:src="@color/gray"/>
 
             <RadioButton
-                android:id="@+id/category_tabs3"
+                android:id="@+id/category_services"
                 style="@style/CategoryTab"
-                android:text="生活服务"/>
+                android:text="@string/domestic_services"/>
 
             <ImageView
                 android:layout_width="match_parent"
@@ -52,9 +52,9 @@
                 android:src="@color/gray"/>
 
             <RadioButton
-                android:id="@+id/category_tabs4"
+                android:id="@+id/category_shopping"
                 style="@style/CategoryTab"
-                android:text="购物"/>
+                android:text="@string/shopping"/>
 
             <ImageView
 
@@ -64,9 +64,9 @@
                 android:src="@color/gray"/>
 
             <RadioButton
-                android:id="@+id/category_tabs5"
+                android:id="@+id/category_beauty"
                 style="@style/CategoryTab"
-                android:text="都市丽人"/>
+                android:text="@string/urban_beauty"/>
 
             <ImageView
                 android:layout_width="match_parent"

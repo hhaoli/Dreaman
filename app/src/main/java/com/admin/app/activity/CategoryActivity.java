@@ -3,10 +3,8 @@ package com.admin.app.activity;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v4.util.SparseArrayCompat;
 import android.view.View;
 import android.widget.RadioGroup;
 
@@ -59,19 +57,19 @@ public class CategoryActivity extends BaseActivity implements RadioGroup.OnCheck
     @Override
     public void onCheckedChanged(RadioGroup group, int checkedId) {
         switch (checkedId) {
-            case R.id.category_tabs1:
+            case R.id.category_food:
                 showFragment(0);
                 break;
-            case R.id.category_tabs2:
+            case R.id.category_entertainment:
                 showFragment(1);
                 break;
-            case R.id.category_tabs3:
+            case R.id.category_services:
                 showFragment(2);
                 break;
-            case R.id.category_tabs4:
+            case R.id.category_shopping:
                 showFragment(3);
                 break;
-            case R.id.category_tabs5:
+            case R.id.category_beauty:
                 showFragment(4);
                 break;
         }

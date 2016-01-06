@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/include_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4.0">
+
+        <LinearLayout
+            android:id="@+id/subclass_category"
+            style="@style/SubclassTab">
+
+            <TextView
+                style="@style/TextView"
+                android:text="@string/all_categories"
+                android:textColor="@color/gray_dark"
+                android:textSize="12sp"/>
+
+            <ImageView
+                android:id="@+id/subclass_category_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:contentDescription="@null"
+                android:src="@mipmap/arrow_down_blue"/>
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@null"
+            android:src="@color/gray"/>
+
+        <LinearLayout
+            android:id="@+id/subclass_sales"
+            style="@style/SubclassTab">
+
+            <TextView
+                style="@style/TextView"
+                android:text="@string/sales"
+                android:textColor="@color/gray_dark"
+                android:textSize="12sp"/>
+
+            <ImageView
+                android:id="@+id/subclass_sales_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:contentDescription="@null"
+                android:src="@mipmap/arrow_up_and_down_gray"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@null"
+            android:src="@color/gray"/>
+
+        <LinearLayout
+            android:id="@+id/subclass_price"
+            style="@style/SubclassTab">
+
+            <TextView
+                style="@style/TextView"
+                android:text="@string/price"
+                android:textColor="@color/gray_dark"
+                android:textSize="12sp"/>
+
+            <ImageView
+                android:id="@+id/subclass_price_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:contentDescription="@null"
+                android:src="@mipmap/arrow_up_and_down_gray"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:contentDescription="@null"
+            android:src="@color/gray"/>
+
+        <LinearLayout
+            android:id="@+id/subclass_distance"
+            style="@style/SubclassTab">
+
+            <TextView
+                style="@style/TextView"
+                android:text="@string/distance"
+                android:textColor="@color/gray_dark"
+                android:textSize="12sp"/>
+
+            <ImageView
+                android:id="@+id/subclass_distance_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:contentDescription="@null"
+                android:src="@mipmap/arrow_up_and_down_gray"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:contentDescription="@null"
+        android:src="@color/gray"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/subclass_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"/>
+
+</LinearLayout>

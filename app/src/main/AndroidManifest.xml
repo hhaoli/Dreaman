@@ -29,6 +29,7 @@
         <activity android:name=".activity.ChangePassword2Activity"/>
         <activity android:name=".activity.ChangePassword3Activity"/>
         <activity android:name=".activity.CategoryActivity"/>
+        <activity android:name=".activity.SubclassActivity"/>
     </application>
 
 </manifest>

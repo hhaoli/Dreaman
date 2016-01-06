@@ -4,11 +4,14 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.admin.app.R;
+import com.admin.app.activity.LoginActivity;
+import com.admin.app.activity.SubclassActivity;
 import com.admin.app.adapter.CategoryAdapter;
 import com.admin.app.interfaces.OnItemClickListener;
 
@@ -51,11 +54,11 @@ public class CategoryFragment extends BaseFragment implements OnItemClickListene
         mTitle = findViewByID(R.id.category_title);
         mRecyclerView = findViewByID(R.id.category_recycler_view);
         mStrings = mActivity.getResources().getStringArray(R.array.category);
-        String[] array1 = mActivity.getResources().getStringArray(R.array.foods1);
-        String[] array2 = mActivity.getResources().getStringArray(R.array.foods2);
-        String[] array3 = mActivity.getResources().getStringArray(R.array.foods3);
-        String[] array4 = mActivity.getResources().getStringArray(R.array.foods4);
-        String[] array5 = mActivity.getResources().getStringArray(R.array.foods5);
+        String[] array1 = mActivity.getResources().getStringArray(R.array.category_food);
+        String[] array2 = mActivity.getResources().getStringArray(R.array.category_entertainment);
+        String[] array3 = mActivity.getResources().getStringArray(R.array.category_services);
+        String[] array4 = mActivity.getResources().getStringArray(R.array.category_shopping);
+        String[] array5 = mActivity.getResources().getStringArray(R.array.category_beauty);
         mList = new ArrayList<>();
         mList.add(array1);
         mList.add(array2);
@@ -86,6 +89,6 @@ public class CategoryFragment extends BaseFragment implements OnItemClickListene
 
     @Override
     public void OnItemClick(ViewGroup parent, View itemView, int position) {
-
+        SubclassActivity.launch(mActivity);
     }
 }

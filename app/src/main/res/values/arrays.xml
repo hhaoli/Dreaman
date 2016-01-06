@@ -7,7 +7,7 @@
         <item>购物</item>
         <item>都市丽人</item>
     </array>
-    <string-array name="foods1">
+    <string-array name="category_food">
         <item>甜品饮品</item>
         <item>火锅/烤肉</item>
         <item>异国料理</item>
@@ -19,7 +19,7 @@
         <item>素食</item>
         <item>中餐</item>
     </string-array>
-    <string-array name="foods2">
+    <string-array name="category_entertainment">
         <item>KTV</item>
         <item>温泉</item>
         <item>足浴SPA</item>
@@ -28,20 +28,20 @@
         <item>电影</item>
         <item>DIY手工</item>
     </string-array>
-    <string-array name="foods3">
+    <string-array name="category_services">
         <item>鲜花</item>
         <item>母婴亲子</item>
         <item>培训课程</item>
         <item>婚纱摄影</item>
     </string-array>
-    <string-array name="foods4">
+    <string-array name="category_shopping">
         <item>酒类</item>
         <item>茶叶</item>
         <item>食品</item>
         <item>零食</item>
         <item>电器数码</item>
     </string-array>
-    <string-array name="foods5">
+    <string-array name="category_beauty">
         <item>美甲</item>
         <item>发型沙龙</item>
     </string-array>

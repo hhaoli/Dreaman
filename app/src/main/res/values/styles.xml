@@ -54,11 +54,23 @@
         <item name="android:textColor">@color/gray_dark</item>
     </style>
 
+    <style name="SubclassTab">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_selector</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
     <style name="TextView" parent="TextAppearance.AppCompat.Small">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textStyle">normal</item>
         <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
     </style>
+
 
 </resources>

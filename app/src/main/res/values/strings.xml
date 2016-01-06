@@ -50,4 +50,13 @@
     <string name="new_password_successfully">新密码设置成功</string>
     <string name="remember_password_to_log_in_again">请牢记您设置的密码\n请重新登录</string>
     <string name="category">分类</string>
+    <string name="food">美食</string>
+    <string name="leisure_and_entertainment">休闲娱乐</string>
+    <string name="domestic_services">生活服务</string>
+    <string name="shopping">购物</string>
+    <string name="urban_beauty">都市丽人</string>
+    <string name="all_categories">全部分类</string>
+    <string name="sales">销量</string>
+    <string name="price">价格</string>
+    <string name="distance">距离</string>
 </resources>
