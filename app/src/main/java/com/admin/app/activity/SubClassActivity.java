@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.admin.app.R;
 import com.admin.app.util.ToastUtils;
+import com.admin.app.util.UIUtils;
 import com.admin.app.view.TitleBuilder;
 
 /**
@@ -21,14 +22,14 @@ import com.admin.app.view.TitleBuilder;
  */
 public class SubclassActivity extends BaseActivity implements View.OnClickListener {
     private LinearLayout mCategory;
-    private LinearLayout mSales;
+    private TextView mSalesTv;
     private LinearLayout mPrice;
-    private LinearLayout mDistance;
+    private TextView mPriceTv;
+    private TextView mDistanceTv;
     private ImageView mCategoryArrow;
-    private ImageView mSalesArrow;
     private ImageView mPriceArrow;
-    private ImageView mDistanceArrow;
     private RecyclerView mRecyclerView;
+    private boolean isOrder = false;
 
     public static void launch(Activity activity) {
         Intent intent = new Intent(activity, SubclassActivity.class);
@@ -47,22 +48,21 @@ public class SubclassActivity extends BaseActivity implements View.OnClickListen
                 .setLeftOnClickListener(this)
                 .setRightOnClickListener(this);
         mCategory = findViewByID(R.id.subclass_category);
-        mSales = findViewByID(R.id.subclass_sales);
+        mSalesTv = findViewByID(R.id.subclass_sales);
         mPrice = findViewByID(R.id.subclass_price);
-        mDistance = findViewByID(R.id.subclass_distance);
+        mPriceTv = findViewByID(R.id.subclass_price_tv);
+        mDistanceTv = findViewByID(R.id.subclass_distance);
         mCategoryArrow = findViewByID(R.id.subclass_category_arrow);
-        mSalesArrow = findViewByID(R.id.subclass_sales_arrow);
         mPriceArrow = findViewByID(R.id.subclass_price_arrow);
-        mDistanceArrow = findViewByID(R.id.subclass_distance_arrow);
         mRecyclerView = findViewByID(R.id.subclass_recycler_view);
     }
 
     @Override
     protected void setListener() {
         mCategory.setOnClickListener(this);
-        mSales.setOnClickListener(this);
+        mSalesTv.setOnClickListener(this);
         mPrice.setOnClickListener(this);
-        mDistance.setOnClickListener(this);
+        mDistanceTv.setOnClickListener(this);
     }
 
     @Override
@@ -80,28 +80,37 @@ public class SubclassActivity extends BaseActivity implements View.OnClickListen
                 ToastUtils.show("搜索");
                 break;
             case R.id.subclass_category:
-                defaultArrow();
-                mCategoryArrow.setImageResource(R.mipmap.arrow_down_blue);
                 break;
             case R.id.subclass_sales:
-                defaultArrow();
-                mSalesArrow.setImageResource(R.mipmap.arrow_up_and_down_blue);
+                defaultColor();
+                mSalesTv.setTextColor(UIUtils.getColor(R.color.blue));
                 break;
             case R.id.subclass_price:
-                defaultArrow();
-                mPriceArrow.setImageResource(R.mipmap.arrow_up_and_down_blue);
+                defaultColor();
+                mPriceTv.setTextColor(UIUtils.getColor(R.color.blue));
+                if (isOrder) {
+                    mPriceArrow.setImageResource(R.mipmap.arrow_up_blue);
+                    isOrder = true;
+                } else {
+                    mPriceArrow.setImageResource(R.mipmap.arrow_down_blue);
+                    isOrder = false;
+                }
                 break;
             case R.id.subclass_distance:
-                defaultArrow();
-                mDistanceArrow.setImageResource(R.mipmap.arrow_up_and_down_blue);
+                defaultColor();
+                mDistanceTv.setTextColor(UIUtils.getColor(R.color.blue));
                 break;
         }
     }
 
-    private void defaultArrow() {
-        mCategoryArrow.setImageResource(R.mipmap.arrow_down_gray);
-        mSalesArrow.setImageResource(R.mipmap.arrow_up_and_down_gray);
-        mPriceArrow.setImageResource(R.mipmap.arrow_up_and_down_gray);
-        mDistanceArrow.setImageResource(R.mipmap.arrow_up_and_down_gray);
+    private void defaultColor() {
+        mSalesTv.setTextColor(UIUtils.getColor(R.color.gray));
+        mPriceTv.setTextColor(UIUtils.getColor(R.color.gray));
+        mDistanceTv.setTextColor(UIUtils.getColor(R.color.gray));
+        if (isOrder) {
+            mPriceArrow.setImageResource(R.mipmap.arrow_up_gray);
+        } else {
+            mPriceArrow.setImageResource(R.mipmap.arrow_down_gray);
+        }
     }
 }

@@ -30,6 +30,7 @@
         <activity android:name=".activity.ChangePassword3Activity"/>
         <activity android:name=".activity.CategoryActivity"/>
         <activity android:name=".activity.SubclassActivity"/>
+        <activity android:name=".activity.SettingActivity"/>
     </application>
 
 </manifest>

@@ -8,6 +8,7 @@ import android.widget.TextView;
 import com.admin.app.R;
 import com.admin.app.activity.ChangePasswordActivity;
 import com.admin.app.activity.LoginActivity;
+import com.admin.app.activity.SettingActivity;
 import com.admin.app.util.ToastUtils;
 import com.admin.app.view.CircleImageView;
 import com.admin.app.view.ItemView;
@@ -165,7 +166,7 @@ public class SelfFragment extends BaseFragment implements View.OnClickListener {
                 ToastUtils.show("4");
                 break;
             case R.id.self_setting:
-                ToastUtils.show("5");
+                SettingActivity.launch(mActivity);
                 break;
             case R.id.self_business:
                 ToastUtils.show("6");

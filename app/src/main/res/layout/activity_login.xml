@@ -10,10 +10,10 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="1px"
+        android:layout_height="@dimen/divider_size"
         android:layout_marginTop="20dp"
         android:contentDescription="@null"
-        android:src="@color/gray"/>
+        android:src="@color/gray_light"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,7 +27,7 @@
             android:layout_margin="10dp"
             android:text="@string/account"
             android:textColor="@color/black"
-            android:textSize="16sp"/>
+            android:textSize="@dimen/text_subhead"/>
 
         <com.admin.app.view.EditTextWithDel
             android:id="@+id/login_account"
@@ -41,14 +41,14 @@
             android:hint="@string/hint_account"
             android:textColor="@color/gray_dark"
             android:textColorHint="@color/gray"
-            android:textSize="16sp"/>
+            android:textSize="@dimen/text_subhead"/>
     </LinearLayout>
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="1px"
+        android:layout_height="@dimen/divider_size"
         android:contentDescription="@null"
-        android:src="@color/gray"/>
+        android:src="@color/gray_light"/>
 
 
     <LinearLayout
@@ -63,7 +63,7 @@
             android:layout_margin="10dp"
             android:text="@string/password"
             android:textColor="@color/black"
-            android:textSize="16sp"/>
+            android:textSize="@dimen/text_subhead"/>
 
         <EditText
             android:id="@+id/login_password"
@@ -80,7 +80,7 @@
             android:inputType="textPassword"
             android:textColor="@color/gray_dark"
             android:textColorHint="@color/gray"
-            android:textSize="16sp"/>
+            android:textSize="@dimen/text_subhead"/>
 
         <com.admin.app.view.Switch
             android:id="@+id/login_switch"
@@ -95,9 +95,9 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="1px"
+        android:layout_height="@dimen/divider_size"
         android:contentDescription="@null"
-        android:src="@color/gray"/>
+        android:src="@color/gray_light"/>
 
     <TextView
         android:id="@+id/login"
@@ -111,7 +111,7 @@
         android:text="@string/login"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:textColor="@color/gray"
-        android:textSize="18sp"/>
+        android:textSize="@dimen/text_subhead"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -125,7 +125,7 @@
             style="@style/TextView"
             android:text="@string/register_an_account"
             android:textColor="@color/gray"
-            android:textSize="14sp"/>
+            android:textSize="@dimen/text_body"/>
 
         <TextView
             android:id="@+id/login_forgot"
@@ -135,6 +135,6 @@
             android:paddingBottom="5dp"
             android:text="@string/forgot_password"
             android:textColor="@color/gray"
-            android:textSize="14sp"/>
+            android:textSize="@dimen/text_body"/>
     </RelativeLayout>
 </LinearLayout>

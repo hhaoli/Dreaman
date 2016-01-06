@@ -12,15 +12,6 @@
         <item name="android:windowBackground">@color/background</item>
     </style>
 
-    <style name="AppTheme.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style>
-
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
-
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
-
     <!--底部导航栏-->
     <style name="MainBottomTab">
         <item name="android:layout_width">0dp</item>
@@ -28,10 +19,10 @@
         <item name="android:layout_weight">1.0</item>
         <item name="android:gravity">center</item>
         <item name="android:button">@null</item>
-        <item name="android:textSize">12sp</item>
+        <item name="android:textSize">@dimen/text_caption</item>
         <item name="android:textColor">@color/text_color_gray2blue_selector</item>
     </style>
-
+    <!--一起买导航栏-->
     <style name="TogetherTab">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">match_parent</item>
@@ -40,10 +31,10 @@
         <item name="android:layout_marginTop">10dp</item>
         <item name="android:drawablePadding">5dp</item>
         <item name="android:gravity">center</item>
-        <item name="android:textSize">12sp</item>
+        <item name="android:textSize">@dimen/text_caption</item>
         <item name="android:textColor">@color/black</item>
     </style>
-
+    <!--分类导航栏-->
     <style name="CategoryTab">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">40dp</item>
@@ -51,9 +42,9 @@
         <item name="android:button">@null</item>
         <item name="android:textSize">14sp</item>
         <item name="android:background">@drawable/blue_border_selector</item>
-        <item name="android:textColor">@color/gray_dark</item>
+        <item name="android:textColor">@color/text_color_gray2blue_selector</item>
     </style>
-
+    <!--子类导航栏-->
     <style name="SubclassTab">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">match_parent</item>
@@ -61,16 +52,30 @@
         <item name="android:layout_marginBottom">10dp</item>
         <item name="android:layout_marginTop">10dp</item>
         <item name="android:gravity">center</item>
-        <item name="android:background">@drawable/btn_selector</item>
         <item name="android:orientation">horizontal</item>
     </style>
-
+    <!--通用文字-->
     <style name="TextView" parent="TextAppearance.AppCompat.Small">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">@dimen/text_caption</item>
         <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
     </style>
 
+    <style name="ImageViewHorizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/divider_size</item>
+        <item name="android:contentDescription">@null</item>
+        <item name="android:src">@color/gray_light</item>
+    </style>
+
+    <style name="ImageViewVertical">
+        <item name="android:layout_width">@dimen/divider_size</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:contentDescription">@null</item>
+        <item name="android:src">@color/gray_light</item>
+    </style>
 
 </resources>

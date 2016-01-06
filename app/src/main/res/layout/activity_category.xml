@@ -23,65 +23,39 @@
                 android:checked="true"
                 android:text="@string/food"/>
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="1px"
-                android:contentDescription="@null"
-                android:src="@color/gray"/>
+            <ImageView style="@style/ImageViewHorizontal"/>
 
             <RadioButton
                 android:id="@+id/category_entertainment"
                 style="@style/CategoryTab"
                 android:text="@string/leisure_and_entertainment"/>
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="1px"
-                android:contentDescription="@null"
-                android:src="@color/gray"/>
+            <ImageView style="@style/ImageViewHorizontal"/>
 
             <RadioButton
                 android:id="@+id/category_services"
                 style="@style/CategoryTab"
                 android:text="@string/domestic_services"/>
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="1px"
-                android:contentDescription="@null"
-                android:src="@color/gray"/>
+            <ImageView style="@style/ImageViewHorizontal"/>
 
             <RadioButton
                 android:id="@+id/category_shopping"
                 style="@style/CategoryTab"
                 android:text="@string/shopping"/>
 
-            <ImageView
-
-                android:layout_width="match_parent"
-                android:layout_height="1px"
-                android:contentDescription="@null"
-                android:src="@color/gray"/>
+            <ImageView style="@style/ImageViewHorizontal"/>
 
             <RadioButton
                 android:id="@+id/category_beauty"
                 style="@style/CategoryTab"
                 android:text="@string/urban_beauty"/>
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="1px"
-                android:contentDescription="@null"
-                android:src="@color/gray"/>
+            <ImageView style="@style/ImageViewHorizontal"/>
 
         </RadioGroup>
 
-        <ImageView
-            android:layout_width="1px"
-            android:layout_height="match_parent"
-            android:contentDescription="@null"
-            android:src="@color/gray"/>
-
+        <ImageView style="@style/ImageViewVertical"/>
 
         <FrameLayout
             android:id="@+id/category_container"

@@ -18,9 +18,7 @@
 
             <TextView
                 style="@style/TextView"
-                android:text="@string/all_categories"
-                android:textColor="@color/gray_dark"
-                android:textSize="12sp"/>
+                android:text="@string/all_categories"/>
 
             <ImageView
                 android:id="@+id/subclass_category_arrow"
@@ -29,9 +27,8 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginStart="5dp"
                 android:contentDescription="@null"
-                android:src="@mipmap/arrow_down_blue"/>
+                android:src="@mipmap/arrow_down_gray"/>
         </LinearLayout>
-
 
         <ImageView
             android:layout_width="1px"
@@ -41,25 +38,11 @@
             android:contentDescription="@null"
             android:src="@color/gray"/>
 
-        <LinearLayout
+        <TextView
             android:id="@+id/subclass_sales"
-            style="@style/SubclassTab">
-
-            <TextView
-                style="@style/TextView"
-                android:text="@string/sales"
-                android:textColor="@color/gray_dark"
-                android:textSize="12sp"/>
-
-            <ImageView
-                android:id="@+id/subclass_sales_arrow"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginStart="5dp"
-                android:contentDescription="@null"
-                android:src="@mipmap/arrow_up_and_down_gray"/>
-        </LinearLayout>
+            style="@style/SubclassTab"
+            android:text="@string/sales"
+            android:textColor="@color/blue"/>
 
         <ImageView
             android:layout_width="1px"
@@ -74,10 +57,9 @@
             style="@style/SubclassTab">
 
             <TextView
+                android:id="@+id/subclass_price_tv"
                 style="@style/TextView"
-                android:text="@string/price"
-                android:textColor="@color/gray_dark"
-                android:textSize="12sp"/>
+                android:text="@string/price"/>
 
             <ImageView
                 android:id="@+id/subclass_price_arrow"
@@ -86,7 +68,7 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginStart="5dp"
                 android:contentDescription="@null"
-                android:src="@mipmap/arrow_up_and_down_gray"/>
+                android:src="@mipmap/arrow_down_gray"/>
         </LinearLayout>
 
         <ImageView
@@ -97,25 +79,10 @@
             android:contentDescription="@null"
             android:src="@color/gray"/>
 
-        <LinearLayout
+        <TextView
             android:id="@+id/subclass_distance"
-            style="@style/SubclassTab">
-
-            <TextView
-                style="@style/TextView"
-                android:text="@string/distance"
-                android:textColor="@color/gray_dark"
-                android:textSize="12sp"/>
-
-            <ImageView
-                android:id="@+id/subclass_distance_arrow"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="5dp"
-                android:layout_marginStart="5dp"
-                android:contentDescription="@null"
-                android:src="@mipmap/arrow_up_and_down_gray"/>
-        </LinearLayout>
+            style="@style/SubclassTab"
+            android:text="@string/distance"/>
     </LinearLayout>
 
     <ImageView

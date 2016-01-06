@@ -60,7 +60,7 @@
         <TextView
             android:id="@+id/together_news"
             style="@style/TogetherTab"
-            android:drawableTop="@mipmap/icon_news"
+            android:drawableTop="@mipmap/icon_news_black"
             android:text="@string/news"/>
     </LinearLayout>
 
