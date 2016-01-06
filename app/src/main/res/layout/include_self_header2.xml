@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:id="@+id/self_header2"
+<FrameLayout android:id="@+id/self_header2"
+             xmlns:android="http://schemas.android.com/apk/res/android"
              xmlns:app="http://schemas.android.com/apk/res-auto"
              android:layout_width="match_parent"
              android:layout_height="wrap_content"
-             android:visibility="gone"
-             android:background="@mipmap/self_header_bg">
+             android:background="@mipmap/self_header_bg"
+             android:visibility="gone">
 
     <com.admin.app.view.CircleImageView
         android:id="@+id/self_header2_icon"
@@ -23,8 +23,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="95dp"
         android:text="@string/login_or_register"
-        android:textColor="@color/white"
-        android:textSize="12sp"/>
+        android:textColor="@color/white"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -54,13 +53,11 @@
                 android:layout_marginTop="2dp"
                 android:text="@string/product_collection"
                 android:textColor="@color/white"
-                android:textSize="10sp"/>
+                android:textSize="@dimen/text_small"/>
         </LinearLayout>
 
         <ImageView
-            android:layout_width="1px"
-            android:layout_height="match_parent"
-            android:contentDescription="@null"
+            style="@style/ImageViewVertical"
             android:src="@color/translucent_bg"/>
 
         <LinearLayout
@@ -83,13 +80,11 @@
                 android:layout_marginTop="2dp"
                 android:text="@string/shop_favorites"
                 android:textColor="@color/white"
-                android:textSize="10sp"/>
+                android:textSize="@dimen/text_small"/>
         </LinearLayout>
 
         <ImageView
-            android:layout_width="1px"
-            android:layout_height="match_parent"
-            android:contentDescription="@null"
+            style="@style/ImageViewVertical"
             android:src="@color/translucent_bg"/>
 
         <LinearLayout
@@ -112,7 +107,7 @@
                 android:layout_marginTop="2dp"
                 android:text="@string/history"
                 android:textColor="@color/white"
-                android:textSize="10sp"/>
+                android:textSize="@dimen/text_small"/>
         </LinearLayout>
 
     </LinearLayout>

@@ -8,8 +8,7 @@
         android:id="@+id/category_title"
         style="@style/TextView"
         android:layout_margin="10dp"
-        android:textColor="@color/gray"
-        android:textSize="16sp"/>
+        android:textSize="@dimen/text_subhead"/>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/category_recycler_view"

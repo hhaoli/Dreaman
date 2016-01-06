@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="horizontal"
-    android:paddingLeft="10dp"
-    android:paddingRight="10dp">
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp">
 
     <FrameLayout
         android:id="@+id/item_home_btn"
@@ -17,25 +17,26 @@
 
         <TextView
             android:id="@+id/item_home_tv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/TextView"
             android:layout_gravity="end|center_vertical"
             android:layout_marginBottom="5dp"
             android:layout_marginTop="5dp"
             android:gravity="center_vertical"
             android:minLines="2"
+            android:paddingEnd="10dp"
             android:paddingLeft="10dp"
             android:paddingRight="15dp"
+            android:paddingStart="10dp"
             android:text="@string/app_name"
-            android:textSize="14sp" />
+            android:textSize="@dimen/text_body"/>
 
         <ImageView
             android:id="@+id/item_home_color"
             android:layout_width="5dp"
             android:layout_height="match_parent"
             android:layout_gravity="start"
-            android:contentDescription="@null"
-            android:background="@color/blue" />
+            android:background="@color/blue"
+            android:contentDescription="@null"/>
     </FrameLayout>
 
     <FrameLayout
@@ -43,10 +44,8 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:layout_width="1px"
-            android:layout_height="match_parent"
-            android:layout_gravity="center_horizontal"
-            android:src="@color/gray_light" />
+            style="@style/ImageViewVertical"
+            android:layout_gravity="center_horizontal"/>
 
         <com.admin.app.view.CircleImageView
             android:id="@+id/item_home_icon"
@@ -55,13 +54,13 @@
             android:layout_gravity="center"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp"
-            android:src="@color/blue" />
+            android:src="@color/blue"/>
 
     </FrameLayout>
 
-    <FrameLayout
+    <View
         android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="1.0" />
+        android:layout_weight="1.0"/>
 
 </LinearLayout>

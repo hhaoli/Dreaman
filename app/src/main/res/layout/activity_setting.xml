@@ -8,10 +8,8 @@
     <include layout="@layout/include_toolbar"/>
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:layout_marginTop="12dp"
-        android:src="@color/gray_light"/>
+        style="@style/ImageViewHorizontal"
+        android:layout_marginTop="12dp"/>
 
     <com.admin.app.view.ItemView
         android:id="@+id/setting_info"
@@ -20,10 +18,7 @@
         app:item_icon="@mipmap/icon_info"
         app:item_left_text="@string/personal_information"/>
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:src="@color/gray_light"/>
+    <ImageView style="@style/ImageViewHorizontal"/>
 
     <com.admin.app.view.ItemView
         android:id="@+id/setting_safety"
@@ -32,10 +27,8 @@
         app:item_icon="@mipmap/icon_safety"
         app:item_left_text="@string/account_security"/>
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:src="@color/gray_light"/>
+    <ImageView style="@style/ImageViewHorizontal"/>
+
 
     <com.admin.app.view.ItemView
         android:id="@+id/setting_news"
@@ -44,10 +37,8 @@
         app:item_icon="@mipmap/icon_news_blue"
         app:item_left_text="@string/news"/>
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:src="@color/gray_light"/>
+    <ImageView style="@style/ImageViewHorizontal"/>
+
 
     <com.admin.app.view.ItemView
         android:id="@+id/setting_common"
@@ -57,10 +48,8 @@
         app:item_left_text="@string/common"/>
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:layout_marginTop="12dp"
-        android:src="@color/gray_light"/>
+        style="@style/ImageViewHorizontal"
+        android:layout_marginTop="12dp"/>
 
     <com.admin.app.view.ItemView
         android:id="@+id/setting_about"
@@ -70,10 +59,9 @@
         app:item_left_text="@string/about"/>
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:layout_marginTop="12dp"
-        android:src="@color/gray_light"/>
+        style="@style/ImageViewHorizontal"
+        android:layout_marginTop="12dp"/>
+
 
     <TextView
         android:id="@+id/setting_exit"
@@ -84,12 +72,8 @@
         android:gravity="center"
         android:text="@string/exit_account"
         android:textColor="@color/red"
-        android:textSize="14sp"/>
+        android:textSize="@dimen/text_body"/>
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:src="@color/gray_light"/>
-
+    <ImageView style="@style/ImageViewHorizontal"/>
 
 </LinearLayout>

@@ -9,11 +9,8 @@
     <include layout="@layout/include_toolbar"/>
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:layout_marginTop="20dp"
-        android:contentDescription="@null"
-        android:src="@color/gray"/>
+        style="@style/ImageViewHorizontal"
+        android:layout_marginTop="20dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,10 +21,10 @@
 
         <TextView
             style="@style/TextView"
-           android:layout_margin="10dp"
+            android:layout_margin="10dp"
             android:text="@string/mobile_number"
-            android:textColor="@color/black"
-            android:textSize="16sp"/>
+            android:textColor="@color/gray_dark"
+            android:textSize="@dimen/text_subhead"/>
 
         <com.admin.app.view.EditTextWithDel
             android:id="@+id/register_phone"
@@ -43,11 +40,7 @@
             android:textSize="16sp"/>
     </LinearLayout>
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:contentDescription="@null"
-        android:src="@color/gray"/>
+    <ImageView style="@style/ImageViewHorizontal"/>
 
 
     <LinearLayout
@@ -61,8 +54,8 @@
             style="@style/TextView"
             android:layout_margin="10dp"
             android:text="@string/security_code"
-            android:textColor="@color/black"
-            android:textSize="16sp"/>
+            android:textColor="@color/gray_dark"
+            android:textSize="@dimen/text_subhead"/>
 
         <EditText
             android:id="@+id/register_code"
@@ -78,41 +71,37 @@
             android:inputType="textPassword"
             android:textColor="@color/gray_dark"
             android:textColorHint="@color/gray"
-            android:textSize="16sp"/>
+            android:textSize="@dimen/text_subhead"/>
 
         <TextView
             android:id="@+id/register_btn_code"
             android:layout_width="115dp"
             android:layout_height="wrap_content"
-            android:text="@string/get_verification_code"
-            android:gravity="center"
-            android:background="@drawable/btn_blue"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp"
-            android:textSize="14sp"
-            android:textColor="@color/white"
             android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"/>
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_blue"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/get_verification_code"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_body"/>
     </LinearLayout>
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:contentDescription="@null"
-        android:src="@color/gray"/>
+    <ImageView style="@style/ImageViewHorizontal"/>
 
     <CheckBox
         android:id="@+id/register_agreement"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/user_agreement"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="10dp"
-        android:padding="5dp"
-        android:textSize="14sp"
-        android:button="@drawable/check_selector"
         android:layout_gravity="center_horizontal"
-        android:textColor="@color/gray"/>
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="30dp"
+        android:button="@drawable/check_selector"
+        android:padding="5dp"
+        android:text="@string/user_agreement"
+        android:textColor="@color/gray"
+        android:textSize="14sp"/>
 
     <TextView
         android:id="@+id/register_next"
@@ -125,6 +114,6 @@
         android:text="@string/next"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:textColor="@color/gray"
-        android:textSize="18sp"/>
+        android:textSize="@dimen/text_subhead"/>
 
 </LinearLayout>

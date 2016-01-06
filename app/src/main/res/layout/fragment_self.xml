@@ -63,16 +63,11 @@
                 android:text="@string/return_of_goods"/>
         </LinearLayout>
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="1px"
-            android:src="@color/gray_light"/>
+        <ImageView style="@style/ImageViewHorizontal"/>
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="1px"
-            android:layout_marginTop="12dp"
-            android:src="@color/gray_light"/>
+            style="@style/ImageViewHorizontal"
+            android:layout_marginTop="12dp"/>
 
         <com.admin.app.view.ItemView
             android:id="@+id/self_coins"
@@ -110,10 +105,8 @@
             app:item_left_text="@string/setting"/>
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="1px"
-            android:layout_marginTop="12dp"
-            android:src="@color/gray_light"/>
+            style="@style/ImageViewHorizontal"
+            android:layout_marginTop="12dp"/>
 
         <com.admin.app.view.ItemView
             android:id="@+id/self_business"

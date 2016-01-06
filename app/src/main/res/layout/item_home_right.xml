@@ -6,7 +6,7 @@
     android:paddingLeft="10dp"
     android:paddingRight="10dp">
 
-    <FrameLayout
+    <View
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="1.0" />
@@ -16,10 +16,8 @@
         android:layout_height="match_parent">
 
         <ImageView
-            android:layout_width="1px"
-            android:layout_height="match_parent"
-            android:layout_gravity="center_horizontal"
-            android:src="@color/gray_light" />
+           style="@style/ImageViewVertical"
+            android:layout_gravity="center_horizontal"/>
 
         <com.admin.app.view.CircleImageView
             android:id="@+id/item_home_icon"
@@ -43,23 +41,25 @@
 
         <TextView
             android:id="@+id/item_home_tv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/TextView"
             android:layout_gravity="start|center_vertical"
             android:layout_marginBottom="5dp"
             android:layout_marginTop="5dp"
             android:gravity="center_vertical"
             android:minLines="2"
             android:paddingLeft="15dp"
+            android:paddingStart="15dp"
             android:paddingRight="10dp"
+            android:paddingEnd="10dp"
             android:text="@string/app_name"
-            android:textSize="14sp" />
+            android:textSize="@dimen/text_body" />
 
         <ImageView
             android:id="@+id/item_home_color"
             android:layout_width="5dp"
             android:layout_height="match_parent"
             android:layout_gravity="end"
+            android:contentDescription="@null"
             android:background="@color/blue" />
     </FrameLayout>
 

@@ -31,7 +31,7 @@ public class RegisterStepActivity extends BaseActivity implements View.OnClickLi
 
     @Override
     protected int layoutResID() {
-        return R.layout.activity_register_step;
+        return R.layout.activity_register2;
     }
 
     @Override

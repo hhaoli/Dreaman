@@ -31,12 +31,10 @@
         </LinearLayout>
 
         <ImageView
-            android:layout_width="1px"
-            android:layout_height="match_parent"
+            style="@style/ImageViewVertical"
             android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp"
-            android:contentDescription="@null"
-            android:src="@color/gray"/>
+            android:layout_marginTop="8dp"/>
+
 
         <TextView
             android:id="@+id/subclass_sales"
@@ -45,12 +43,9 @@
             android:textColor="@color/blue"/>
 
         <ImageView
-            android:layout_width="1px"
-            android:layout_height="match_parent"
+            style="@style/ImageViewVertical"
             android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp"
-            android:contentDescription="@null"
-            android:src="@color/gray"/>
+            android:layout_marginTop="8dp"/>
 
         <LinearLayout
             android:id="@+id/subclass_price"
@@ -72,12 +67,9 @@
         </LinearLayout>
 
         <ImageView
-            android:layout_width="1px"
-            android:layout_height="match_parent"
+            style="@style/ImageViewVertical"
             android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp"
-            android:contentDescription="@null"
-            android:src="@color/gray"/>
+            android:layout_marginTop="8dp"/>
 
         <TextView
             android:id="@+id/subclass_distance"
@@ -85,11 +77,7 @@
             android:text="@string/distance"/>
     </LinearLayout>
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:contentDescription="@null"
-        android:src="@color/gray"/>
+    <ImageView style="@style/ImageViewHorizontal"/>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/subclass_recycler_view"

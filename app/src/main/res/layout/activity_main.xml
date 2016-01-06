@@ -15,10 +15,7 @@
             android:layout_height="0dp"
             android:layout_weight="1.0"/>
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/divider"/>
+        <ImageView style="@style/ImageViewHorizontal"/>
 
         <RadioGroup
             android:id="@+id/main_tabs"
@@ -50,7 +47,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:src="@mipmap/icon_add"
-                app:civ_border_color="#75c3fa"
+                app:civ_border_color="@color/blue"
                 app:civ_border_width="2dp"/>
 
             <RadioButton

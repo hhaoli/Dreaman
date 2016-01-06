@@ -19,10 +19,7 @@
             android:drawableTop="@mipmap/icon_friends"
             android:text="@string/friends"/>
 
-        <ImageView
-            android:layout_width="1px"
-            android:layout_height="match_parent"
-            android:src="@color/gray_light"/>
+        <ImageView style="@style/ImageViewVertical"/>
 
         <TextView
             android:id="@+id/together_ranking"
@@ -30,10 +27,7 @@
             android:drawableTop="@mipmap/icon_ranking"
             android:text="@string/ranking"/>
 
-        <ImageView
-            android:layout_width="1px"
-            android:layout_height="match_parent"
-            android:src="@color/gray_light"/>
+        <ImageView style="@style/ImageViewVertical"/>
 
         <TextView
             android:id="@+id/together_qr_code"
@@ -41,10 +35,7 @@
             android:drawableTop="@mipmap/icon_qr_code"
             android:text="@string/qr_code"/>
 
-        <ImageView
-            android:layout_width="1px"
-            android:layout_height="match_parent"
-            android:src="@color/gray_light"/>
+        <ImageView style="@style/ImageViewVertical"/>
 
         <TextView
             android:id="@+id/together_shopping_cart"
@@ -52,10 +43,7 @@
             android:drawableTop="@mipmap/icon_shopping_cart"
             android:text="@string/shopping_cart"/>
 
-        <ImageView
-            android:layout_width="1px"
-            android:layout_height="match_parent"
-            android:src="@color/gray_light"/>
+        <ImageView style="@style/ImageViewVertical"/>
 
         <TextView
             android:id="@+id/together_news"
@@ -64,23 +52,16 @@
             android:text="@string/news"/>
     </LinearLayout>
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:src="@color/gray_light"/>
+    <ImageView style="@style/ImageViewHorizontal"/>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/TextView"
         android:layout_marginBottom="10dp"
         android:layout_marginLeft="15dp"
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
-        android:text="@string/I_started_to_buy_together"
-        android:textColor="@color/gray"/>
+        android:text="@string/I_started_to_buy_together"/>
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:src="@color/gray_light"/>
+    <ImageView style="@style/ImageViewHorizontal"/>
+
 </LinearLayout>

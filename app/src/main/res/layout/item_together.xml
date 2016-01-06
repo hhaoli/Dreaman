@@ -15,6 +15,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_margin="5dp"
+            android:contentDescription="@null"
             android:src="@color/blue"/>
 
         <TextView
@@ -25,9 +26,7 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
             android:layout_toEndOf="@+id/item_together_icon"
-            android:layout_toRightOf="@+id/item_together_icon"
-            android:textColor="@color/gray"
-            android:textSize="12sp"/>
+            android:layout_toRightOf="@+id/item_together_icon"/>
 
         <TextView
             android:id="@+id/item_together_beans"
@@ -41,16 +40,16 @@
             android:drawableLeft="@mipmap/beans_gray"
             android:drawablePadding="5dp"
             android:drawableStart="@mipmap/beans_gray"
-            android:textColor="@color/gray_dark"
-            android:textSize="12sp"/>
+            android:textColor="@color/gray_dark"/>
     </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginRight="5dp"
-        android:layout_marginLeft="5dp"
         android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:baselineAligned="false"
         android:orientation="horizontal"
         android:weightSum="2.0">
 
@@ -75,12 +74,9 @@
                 android:scaleType="centerInside"/>
 
             <ImageView
-                android:layout_width="1px"
-                android:layout_height="match_parent"
+                style="@style/ImageViewVertical"
                 android:layout_marginBottom="5dp"
-                android:layout_marginTop="5dp"
-                android:contentDescription="@null"
-                android:src="@color/gray_light"/>
+                android:layout_marginTop="5dp"/>
 
             <TextView
                 android:id="@+id/item_together_money"
@@ -109,11 +105,9 @@
                 android:scaleType="centerInside"/>
 
             <ImageView
-                android:layout_width="1px"
-                android:layout_height="match_parent"
+                style="@style/ImageViewVertical"
                 android:layout_marginBottom="5dp"
-                android:layout_marginTop="5dp"
-                android:src="@color/gray_light"/>
+                android:layout_marginTop="5dp"/>
 
             <TextView
                 android:id="@+id/item_together_number"

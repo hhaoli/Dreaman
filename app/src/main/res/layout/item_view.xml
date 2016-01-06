@@ -20,7 +20,7 @@
         android:layout_toEndOf="@+id/item_view_icon"
         android:layout_toRightOf="@+id/item_view_icon"
         android:textColor="@color/gray_dark"
-        android:textSize="14sp"/>
+        android:textSize="@dimen/text_body"/>
 
     <TextView
         android:id="@+id/item_view_right_text"
@@ -31,7 +31,7 @@
         android:layout_toLeftOf="@+id/item_view_arrow"
         android:layout_toStartOf="@+id/item_view_arrow"
         android:textColor="@color/gray_dark"
-        android:textSize="14sp"/>
+        android:textSize="@dimen/text_body"/>
 
     <ImageView
         android:id="@+id/item_view_arrow"
@@ -47,10 +47,7 @@
         android:visibility="visible"/>
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="1px"
-        android:layout_alignParentBottom="true"
-        android:contentDescription="@null"
-        android:src="@color/gray_light"/>
+        style="@style/ImageViewHorizontal"
+        android:layout_alignParentBottom="true"/>
 
 </RelativeLayout>

@@ -28,7 +28,7 @@
         android:paddingRight="16dp"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:textColor="@color/text_color_white2gray_selector"
-        android:textSize="16sp"/>
+        android:textSize="@dimen/text_subhead"/>
 
 
     <TextView
@@ -40,7 +40,7 @@
         android:singleLine="true"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="@color/white"
-        android:textSize="20sp"/>
+        android:textSize="@dimen/text_title"/>
 
 
     <ImageView
@@ -66,6 +66,6 @@
         android:paddingRight="16dp"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:textColor="@color/text_color_white2gray_selector"
-        android:textSize="16sp"/>
+        android:textSize="@dimen/text_subhead"/>
 
 </RelativeLayout>

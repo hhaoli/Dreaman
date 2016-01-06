@@ -4,13 +4,11 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.admin.app.R;
-import com.admin.app.activity.LoginActivity;
 import com.admin.app.activity.SubclassActivity;
 import com.admin.app.adapter.CategoryAdapter;
 import com.admin.app.interfaces.OnItemClickListener;
