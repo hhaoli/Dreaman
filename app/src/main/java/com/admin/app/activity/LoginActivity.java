@@ -90,10 +90,24 @@ public class LoginActivity extends BaseActivity implements CompoundButton.OnChec
                 finish();
                 break;
             case R.id.login:
+                String account = mAccount.getText().toString().trim();
+                if (TextUtils.isEmpty(account)) {
+                    ToastUtils.show("请输入账号");
+                    return;
+                }
+                String password = mPassword.getText().toString().trim();
+                if (TextUtils.isEmpty(password)) {
+                    ToastUtils.show("请输入密码");
+                    return;
+                }
+                if (password.length() < 7 || password.length() > 16) {
+                    ToastUtils.show("密码位数不正确");
+                    return;
+                }
                 ToastUtils.show(R.string.login);
                 break;
             case R.id.login_register:
-                ToastUtils.show(R.string.register_an_account);
+                RegisterActivity.launch(this);
                 break;
             case R.id.login_forgot:
                 ToastUtils.show(R.string.forgot_password);

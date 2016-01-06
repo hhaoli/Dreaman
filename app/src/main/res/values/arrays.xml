@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="category">
+        <item>美食</item>
+        <item>休闲娱乐</item>
+        <item>生活服务</item>
+        <item>购物</item>
+        <item>都市丽人</item>
+    </array>
+    <string-array name="foods1">
+        <item>甜品饮品</item>
+        <item>火锅/烤肉</item>
+        <item>异国料理</item>
+        <item>西餐</item>
+        <item>地方菜</item>
+        <item>自助餐</item>
+        <item>咖啡酒吧</item>
+        <item>海鲜</item>
+        <item>素食</item>
+        <item>中餐</item>
+    </string-array>
+    <string-array name="foods2">
+        <item>KTV</item>
+        <item>温泉</item>
+        <item>足浴SPA</item>
+        <item>桌游/电玩/真人CS</item>
+        <item>运动健身</item>
+        <item>电影</item>
+        <item>DIY手工</item>
+    </string-array>
+    <string-array name="foods3">
+        <item>鲜花</item>
+        <item>母婴亲子</item>
+        <item>培训课程</item>
+        <item>婚纱摄影</item>
+    </string-array>
+    <string-array name="foods4">
+        <item>酒类</item>
+        <item>茶叶</item>
+        <item>食品</item>
+        <item>零食</item>
+        <item>电器数码</item>
+    </string-array>
+    <string-array name="foods5">
+        <item>美甲</item>
+        <item>发型沙龙</item>
+    </string-array>
+</resources>

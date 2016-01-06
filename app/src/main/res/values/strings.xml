@@ -39,4 +39,15 @@
     <string name="password">密码</string>
     <string name="register_an_account">注册账号</string>
     <string name="forgot_password">忘记密码?</string>
+    <string name="mobile_number">手机号</string>
+    <string name="security_code">验证码</string>
+    <string name="get_verification_code">获取验证码</string>
+    <string name="register">注册</string>
+    <string name="next">下一步</string>
+    <string name="user_agreement">同意够不购《用户使用协议》</string>
+    <string name="confirm_password">确认密码</string>
+    <string name="change_password">修改密码</string>
+    <string name="new_password_successfully">新密码设置成功</string>
+    <string name="remember_password_to_log_in_again">请牢记您设置的密码\n请重新登录</string>
+    <string name="category">分类</string>
 </resources>

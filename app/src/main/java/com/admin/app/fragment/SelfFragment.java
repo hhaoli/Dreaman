@@ -6,6 +6,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.admin.app.R;
+import com.admin.app.activity.ChangePasswordActivity;
 import com.admin.app.activity.LoginActivity;
 import com.admin.app.util.ToastUtils;
 import com.admin.app.view.CircleImageView;
@@ -152,6 +153,7 @@ public class SelfFragment extends BaseFragment implements View.OnClickListener {
                 break;
             case R.id.self_coins:
                 ToastUtils.show("1");
+                ChangePasswordActivity.launch(mActivity);
                 break;
             case R.id.self_ticket:
                 ToastUtils.show("2");

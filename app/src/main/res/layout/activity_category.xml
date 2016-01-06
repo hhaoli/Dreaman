@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/include_toolbar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/category_tabs"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/category_tabs1"
+                style="@style/CategoryTab"
+                android:checked="true"
+                android:text="美食"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:contentDescription="@null"
+                android:src="@color/gray"/>
+
+            <RadioButton
+                android:id="@+id/category_tabs2"
+                style="@style/CategoryTab"
+                android:text="休闲娱乐"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:contentDescription="@null"
+                android:src="@color/gray"/>
+
+            <RadioButton
+                android:id="@+id/category_tabs3"
+                style="@style/CategoryTab"
+                android:text="生活服务"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:contentDescription="@null"
+                android:src="@color/gray"/>
+
+            <RadioButton
+                android:id="@+id/category_tabs4"
+                style="@style/CategoryTab"
+                android:text="购物"/>
+
+            <ImageView
+
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:contentDescription="@null"
+                android:src="@color/gray"/>
+
+            <RadioButton
+                android:id="@+id/category_tabs5"
+                style="@style/CategoryTab"
+                android:text="都市丽人"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:contentDescription="@null"
+                android:src="@color/gray"/>
+
+        </RadioGroup>
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:contentDescription="@null"
+            android:src="@color/gray"/>
+
+
+        <FrameLayout
+            android:id="@+id/category_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:background="@color/white"/>
+    </LinearLayout>
+</LinearLayout>

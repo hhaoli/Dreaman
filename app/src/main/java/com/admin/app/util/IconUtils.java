@@ -12,7 +12,7 @@ public class IconUtils {
     /**
      * 首页条目图片
      */
-    public static int getItemHome(int position) {
+    public static int getHomeIcon(int position) {
         int index = position % 6;
         switch (index) {
             case 0:
@@ -30,7 +30,26 @@ public class IconUtils {
             default:
                 return 0;
         }
+    }
 
+    public static int getHomeColor(int position) {
+        int index = position % 6;
+        switch (index) {
+            case 0:
+                return R.color.blue;
+            case 1:
+                return R.color.orange;
+            case 2:
+                return R.color.green;
+            case 3:
+                return R.color.red;
+            case 4:
+                return R.color.gray;
+            case 5:
+                return R.color.yellow;
+            default:
+                return 0;
+        }
     }
 
     public static int getReduce(int position) {

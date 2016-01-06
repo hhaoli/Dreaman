@@ -7,6 +7,7 @@ import android.widget.TextView;
 
 import com.admin.app.R;
 import com.admin.app.util.IconUtils;
+import com.admin.app.util.UIUtils;
 import com.admin.app.view.CircleImageView;
 
 /**
@@ -36,6 +37,7 @@ public class HomeHolder extends BaseRecyclerViewHolder<String> {
     @Override
     protected void onBindData(final String s, int position) {
         mText.setText(s);
-        mIcon.setImageResource(IconUtils.getItemHome(position));
+        mIcon.setImageResource(IconUtils.getHomeIcon(position));
+        mColor.setBackgroundColor(UIUtils.getColor(IconUtils.getHomeColor(position)));
     }
 }

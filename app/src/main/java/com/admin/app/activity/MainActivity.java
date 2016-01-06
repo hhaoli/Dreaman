@@ -166,7 +166,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener, 
                 break;
             case R.id.menu_category:
                 hideMenu();
-                ToastUtils.show("分类");
+                CategoryActivity.launch(this);
                 break;
             case R.id.menu_search:
                 hideMenu();
