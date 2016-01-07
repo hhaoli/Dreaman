@@ -2,6 +2,7 @@ package com.admin.app.adapter;
 
 import android.support.v7.widget.RecyclerView;
 
+import com.admin.app.R;
 import com.admin.app.holder.ViewHolderHelper;
 
 /**
@@ -17,6 +18,9 @@ public class SubclassAdapter extends RecyclerViewAdapter {
 
     @Override
     protected void onBindData(ViewHolderHelper helper, int position, Object o) {
-
+        helper.setText(R.id.item_subclass_name,"空气抱枕");
+        helper.setText(R.id.item_subclass_price,"￥86");
+        helper.setText(R.id.item_subclass_original_price,"125");
+        helper.setText(R.id.item_subclass_number,"210");
     }
 }

@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.admin.app.R;
@@ -28,6 +29,7 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
     private CircleImageView mItem3;
     private CircleImageView mItem4;
     private RecyclerView mRecyclerView;
+    private ImageView mEmpty;
     String[] mStrings = {"一 月Jan.", "二 月Feb.", "三 月Mar.", "四 月Apr.", "五 月May.", "六 月Jun.", "七 月Jul.", "八 月Aug.", "九 月Sep.", "十 月Oct.", "十一月Nov.", "十二月Dec."};
 
 
@@ -46,6 +48,7 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
         mItem3 = findViewByID(R.id.home_header_item3);
         mItem4 = findViewByID(R.id.home_header_item4);
         mRecyclerView = findViewByID(R.id.home_recycler_view);
+        mEmpty = findViewByID(R.id.home_empty);
     }
 
     @Override
@@ -67,6 +70,9 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
         mRecyclerView.setLayoutManager(manager);
         HomeAdapter adapter = new HomeAdapter(getContext(), mStrings);
         mRecyclerView.setAdapter(adapter);
+        if (mStrings.length < 1) {
+            mEmpty.setVisibility(View.VISIBLE);
+        }
     }
 
     @Override

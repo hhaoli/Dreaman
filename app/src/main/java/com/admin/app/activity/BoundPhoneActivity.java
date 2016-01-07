@@ -17,38 +17,36 @@ import com.admin.app.view.TitleBuilder;
 /**
  * 作者：鸿浩
  * 邮箱：hhaoli@sina.cn
- * 时间：2016/1/5
+ * 时间：2016/1/7
  * 描述：
  */
-public class ChangePasswordActivity extends BaseActivity implements View.OnClickListener {
-    private EditTextWithDel mPhone;
+public class BoundPhoneActivity extends BaseActivity implements View.OnClickListener {
+    private TextView mPhone;
+    private EditTextWithDel mNumber;
     private EditText mCode;
     private TextView mBtnCode;
     private TextView mNext;
     private TimeCount mTimeCount;
     private long firstTime = 0;
-    public static final String IS_REGISTER = "is_register";
-    private boolean is_register = false;
 
-    public static void launch(Activity activity, boolean isRegister) {
-        Intent intent = new Intent(activity, ChangePasswordActivity.class);
-        intent.putExtra(IS_REGISTER, isRegister);
+    public static void launch(Activity activity) {
+        Intent intent = new Intent(activity, BoundPhoneActivity.class);
         activity.startActivity(intent);
     }
 
     @Override
     protected int layoutResID() {
-        return R.layout.activity_change_password;
+        return R.layout.activity_bound_phone;
     }
 
     @Override
     protected void initView(Bundle savedInstanceState) {
-        is_register = getIntent().getBooleanExtra(IS_REGISTER, false);
-        new TitleBuilder(this).setTitle(R.string.change_password).setLeftOnClickListener(this);
-        mPhone = findViewByID(R.id.change_phone);
-        mCode = findViewByID(R.id.change_code);
-        mBtnCode = findViewByID(R.id.change_btn_code);
-        mNext = findViewByID(R.id.change_next);
+        new TitleBuilder(this).setTitle(R.string.bound_phone).setLeftOnClickListener(this);
+        mPhone = findViewByID(R.id.bound_phone);
+        mNumber = findViewByID(R.id.bound_phone_number);
+        mCode = findViewByID(R.id.bound_phone_code);
+        mBtnCode = findViewByID(R.id.bound_phone_btn_code);
+        mNext = findViewByID(R.id.bound_phone_next);
     }
 
     @Override
@@ -60,6 +58,7 @@ public class ChangePasswordActivity extends BaseActivity implements View.OnClick
     @Override
     protected void processLogic(Bundle savedInstanceState) {
         mTimeCount = new TimeCount(60000, 1000);
+        mPhone.setText("当前绑定手机号码为" + "1871234567" + "\n请输入新的手机号码");
     }
 
     @Override
@@ -68,10 +67,14 @@ public class ChangePasswordActivity extends BaseActivity implements View.OnClick
             case R.id.toolbar_iv_left:
                 finish();
                 break;
-            case R.id.change_btn_code:
-                String mobile = mPhone.getText().toString().trim();
-                if (TextUtils.isEmpty(mobile)) {
-                    ToastUtils.show("请输入手机号");
+            case R.id.bound_phone_btn_code:
+                String number=mNumber.getText().toString().trim();
+                if (TextUtils.isEmpty(number)){
+                    ToastUtils.show("请输入手机号码");
+                    return;
+                }
+                if (number.length()!=11){
+                    ToastUtils.show("手机号码有错");
                     return;
                 }
                 long secondTime = System.currentTimeMillis();
@@ -83,16 +86,12 @@ public class ChangePasswordActivity extends BaseActivity implements View.OnClick
                     return;//防止连续点击
                 }
                 break;
-            case R.id.change_next:
-                String code = mCode.getText().toString().trim();
-                if (TextUtils.isEmpty(code)) {
-                    ToastUtils.show("请输入验证码");
-                    return;
-                }
-                ChangePassword2Activity.launch(this, is_register);
+            case R.id.bound_phone_next:
+                BoundPhone2Activity.launch(this);
                 break;
         }
     }
+
 
     // 计时重发
     private class TimeCount extends CountDownTimer {
@@ -108,7 +107,7 @@ public class ChangePasswordActivity extends BaseActivity implements View.OnClick
             if (time < 10) {
                 mBtnCode.setText("倒计时0" + time + "秒");
             } else {
-                mBtnCode.setText("倒计时" + time + "秒");
+                mBtnCode.setText("倒计时"+time + "秒");
             }
         }
 

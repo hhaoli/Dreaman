@@ -79,6 +79,13 @@ public class TitleBuilder {
         return this;
     }
 
+    public TitleBuilder setTitleOnClickListener(View.OnClickListener listener) {
+        if (title.getVisibility() == View.VISIBLE) {
+            title.setOnClickListener(listener);
+        }
+        return this;
+    }
+
     public TitleBuilder setLeftOnClickListener(View.OnClickListener listener) {
         if (iv_left.getVisibility() == View.VISIBLE) {
             iv_left.setOnClickListener(listener);

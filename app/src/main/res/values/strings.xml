@@ -45,6 +45,8 @@
     <string name="register">注册</string>
     <string name="next">下一步</string>
     <string name="user_agreement">同意够不购《用户使用协议》</string>
+    <string name="old_password">原密码</string>
+    <string name="new_password">新密码</string>
     <string name="confirm_password">确认密码</string>
     <string name="change_password">修改密码</string>
     <string name="new_password_successfully">新密码设置成功</string>
@@ -64,4 +66,18 @@
     <string name="common">通用</string>
     <string name="about">关于</string>
     <string name="exit_account">退出账号</string>
+    <string name="original_price">原价</string>
+    <string name="current_city">当前城市:</string>
+    <string name="switching">切换</string>
+    <string name="avatar">头像</string>
+    <string name="nickname">昵称</string>
+    <string name="shipping_address">收货地址</string>
+    <string name="sex">性别</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="save">保存</string>
+    <string name="bound_phone">绑定手机</string>
+    <string name="determine">确定</string>
+    <string name="congratulations_cellphone_success">恭喜你,手机绑定成功!</string>
+
 </resources>

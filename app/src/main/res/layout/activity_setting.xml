@@ -39,7 +39,6 @@
 
     <ImageView style="@style/ImageViewHorizontal"/>
 
-
     <com.admin.app.view.ItemView
         android:id="@+id/setting_common"
         android:layout_width="match_parent"

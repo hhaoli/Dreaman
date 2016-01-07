@@ -154,7 +154,7 @@ public class SelfFragment extends BaseFragment implements View.OnClickListener {
                 break;
             case R.id.self_coins:
                 ToastUtils.show("1");
-                ChangePasswordActivity.launch(mActivity);
+                ChangePasswordActivity.launch(mActivity, true);//来源注册
                 break;
             case R.id.self_ticket:
                 ToastUtils.show("2");

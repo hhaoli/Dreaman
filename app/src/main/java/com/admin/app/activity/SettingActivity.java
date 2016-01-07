@@ -67,8 +67,10 @@ public class SettingActivity extends BaseActivity implements View.OnClickListene
                 finish();
                 break;
             case R.id.setting_info:
+                InfoActivity.launch(this);
                 break;
             case R.id.setting_safety:
+                AccountSecurityActivity.launch(this);
                 break;
             case R.id.setting_news:
                 break;

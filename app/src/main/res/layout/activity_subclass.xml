@@ -40,6 +40,9 @@
             android:id="@+id/subclass_sales"
             style="@style/SubclassTab"
             android:text="@string/sales"
+            android:textStyle="normal"
+            android:textSize="@dimen/text_caption"
+            android:textAppearance="?android:attr/textAppearanceSmall"
             android:textColor="@color/blue"/>
 
         <ImageView
@@ -74,7 +77,12 @@
         <TextView
             android:id="@+id/subclass_distance"
             style="@style/SubclassTab"
+            android:textStyle="normal"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/text_caption"
+            android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="@string/distance"/>
+
     </LinearLayout>
 
     <ImageView style="@style/ImageViewHorizontal"/>
