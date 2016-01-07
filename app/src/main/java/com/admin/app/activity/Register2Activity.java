@@ -17,7 +17,7 @@ import com.admin.app.view.TitleBuilder;
  * 时间：2016/1/5
  * 描述：
  */
-public class RegisterStepActivity extends BaseActivity implements View.OnClickListener {
+public class Register2Activity extends BaseActivity implements View.OnClickListener {
     private ImageView mAvatar;
     private EditTextWithDel mAccount;
     private EditTextWithDel mPassword;
@@ -25,7 +25,7 @@ public class RegisterStepActivity extends BaseActivity implements View.OnClickLi
     private TextView mRegister;
 
     public static void launch(Activity activity) {
-        Intent intent = new Intent(activity, RegisterStepActivity.class);
+        Intent intent = new Intent(activity, Register2Activity.class);
         activity.startActivity(intent);
     }
 

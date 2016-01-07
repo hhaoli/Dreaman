@@ -97,7 +97,7 @@ public class RegisterActivity extends BaseActivity implements View.OnClickListen
                     ToastUtils.show("请确认用户协议");
                     return;
                 }
-                RegisterStepActivity.launch(this);
+                Register2Activity.launch(this);
                 break;
         }
     }
