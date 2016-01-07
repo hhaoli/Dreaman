@@ -24,7 +24,7 @@
         <activity android:name=".activity.MainActivity"/>
         <activity android:name=".activity.LoginActivity"/>
         <activity android:name=".activity.RegisterActivity"/>
-        <activity android:name=".activity.RegisterStepActivity"/>
+        <activity android:name=".activity.Register2Activity"/>
         <activity android:name=".activity.ChangePasswordActivity"/>
         <activity android:name=".activity.ChangePassword2Activity"/>
         <activity android:name=".activity.ChangePassword3Activity"/>
