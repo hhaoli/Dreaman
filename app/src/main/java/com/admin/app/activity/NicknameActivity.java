@@ -3,53 +3,48 @@ package com.admin.app.activity;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.CountDownTimer;
-import android.text.TextUtils;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.TextView;
 
 import com.admin.app.R;
-import com.admin.app.util.StringUtils;
-import com.admin.app.util.ToastUtils;
 import com.admin.app.view.EditTextWithDel;
 import com.admin.app.view.TitleBuilder;
 
 /**
  * 作者：鸿浩
  * 邮箱：hhaoli@sina.cn
- * 时间：2016/1/7
+ * 时间：2016/1/8
  * 描述：
  */
-public class BoundPhone2Activity extends BaseActivity implements View.OnClickListener {
-    private TextView mPhone;
-    private TextView mDetermine;
+public class NicknameActivity extends BaseActivity implements View.OnClickListener {
+    private EditTextWithDel mNickname;
+    private TextView mBtnSvae;
 
     public static void launch(Activity activity) {
-        Intent intent = new Intent(activity, BoundPhone2Activity.class);
+        Intent intent = new Intent(activity, NicknameActivity.class);
         activity.startActivity(intent);
     }
 
     @Override
     protected int layoutResID() {
-        return R.layout.activity_bound_phone2;
+        return R.layout.activity_nickname;
     }
 
     @Override
     protected void initView(Bundle savedInstanceState) {
-        new TitleBuilder(this).setTitle(R.string.bound_phone).setLeftOnClickListener(this);
-        mPhone = findViewByID(R.id.bound_phone);
-        mDetermine = findViewByID(R.id.bound_phone_determine);
+        new TitleBuilder(this).setTitle(R.string.nickname).setLeftOnClickListener(this);
+        mNickname = findViewByID(R.id.nickname);
+        mBtnSvae = findViewByID(R.id.nickname_save);
     }
 
     @Override
     protected void setListener() {
-        mDetermine.setOnClickListener(this);
+        mBtnSvae.setOnClickListener(this);
     }
 
     @Override
     protected void processLogic(Bundle savedInstanceState) {
-        mPhone.setText("成功绑定手机号码" + StringUtils.getPhone("18712345678"));
+
     }
 
     @Override
@@ -58,8 +53,7 @@ public class BoundPhone2Activity extends BaseActivity implements View.OnClickLis
             case R.id.toolbar_iv_left:
                 finish();
                 break;
-            case R.id.bound_phone_determine:
-                ToastUtils.show("成功");
+            case R.id.nickname_save:
                 break;
         }
     }

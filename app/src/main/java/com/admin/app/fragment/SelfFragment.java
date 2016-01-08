@@ -9,6 +9,7 @@ import com.admin.app.R;
 import com.admin.app.activity.ChangePasswordActivity;
 import com.admin.app.activity.LoginActivity;
 import com.admin.app.activity.SettingActivity;
+import com.admin.app.activity.ShoppingCartActivity;
 import com.admin.app.util.ToastUtils;
 import com.admin.app.view.CircleImageView;
 import com.admin.app.view.ItemView;
@@ -138,6 +139,7 @@ public class SelfFragment extends BaseFragment implements View.OnClickListener {
                 break;
             case R.id.self_payment:
                 ToastUtils.show(R.string.pending_payment);
+                ShoppingCartActivity.launch(mActivity);
                 break;
             case R.id.self_used:
                 ToastUtils.show(R.string.to_be_used);

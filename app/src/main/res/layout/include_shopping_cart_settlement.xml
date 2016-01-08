@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shopping_cart_settlement_view"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolbar_size"
+    android:layout_gravity="bottom"
+    android:background="@color/gray_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <CheckBox
+        android:id="@+id/shopping_cart_settlement_check"
+        style="@style/TextView"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:button="@null"
+        android:drawableLeft="@drawable/icon_tick_white_circle_selector"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/icon_tick_white_circle_selector"
+        android:text="@string/check_all"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_subhead" />
+
+    <ImageView
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@null"
+        android:src="@color/gray_dark" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0">
+
+        <TextView
+            android:id="@+id/shopping_cart_total"
+            style="@style/TextView"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/total"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/shopping_cart_settlement_price"
+            style="@style/TextView"
+            android:layout_alignBottom="@+id/shopping_cart_total"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/shopping_cart_total"
+            android:layout_toRightOf="@+id/shopping_cart_total"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_body" />
+
+        <TextView
+            style="@style/TextView"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:text="@string/excluding_freight"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/shopping_cart_settlement"
+        style="@style/TextView"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:background="@color/red"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="@string/settlement"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_subhead" />
+
+</LinearLayout>

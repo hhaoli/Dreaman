@@ -17,9 +17,9 @@
         <TextView
             style="@style/TextView"
             android:layout_marginTop="30dp"
-            android:drawableLeft="@mipmap/icon_tick"
+            android:drawableLeft="@mipmap/icon_tick_blue"
             android:drawablePadding="5dp"
-            android:drawableStart="@mipmap/icon_tick"
+            android:drawableStart="@mipmap/icon_tick_blue"
             android:text="@string/congratulations_cellphone_success"
             android:textColor="@color/blue"
             android:textSize="@dimen/text_subhead"

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_size"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextView"
+            android:layout_margin="10dp"
+            android:text="@string/consignee"
+            android:textSize="@dimen/text_subhead" />
+
+        <EditText
+            android:id="@+id/address_consignee"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1.0"
+            android:background="@null"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:inputType="text"
+            android:textColor="@color/gray_dark"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/text_subhead" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_size"
+        android:background="@drawable/gray_border_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextView"
+            android:layout_margin="10dp"
+            android:text="@string/mobile_number"
+            android:textSize="@dimen/text_subhead" />
+
+        <EditText
+            android:id="@+id/address_phone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1.0"
+            android:background="@null"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:inputType="phone"
+            android:textColor="@color/gray_dark"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/text_subhead" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/address_area"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_size"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextView"
+            android:layout_margin="10dp"
+            android:text="@string/area"
+            android:textSize="@dimen/text_subhead" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:textColor="@color/gray_dark"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/text_subhead" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:contentDescription="@null"
+            android:scaleType="centerInside"
+            android:src="@mipmap/arrow_right_black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_size"
+        android:background="@drawable/gray_border_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextView"
+            android:layout_margin="10dp"
+            android:text="@string/detailed_address"
+            android:textSize="@dimen/text_subhead" />
+
+        <EditText
+            android:id="@+id/address_detail"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1.0"
+            android:background="@null"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:inputType="text"
+            android:textColor="@color/gray_dark"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/text_subhead" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0" />
+
+    <TextView
+        android:id="@+id/address_save"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_size"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/btn_blue"
+        android:gravity="center"
+        android:text="@string/save"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_subhead" />
+
+</LinearLayout>

@@ -2,6 +2,54 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="bottom"
     android:orientation="vertical">
+
+    <ImageView style="@style/ImageViewHorizontal" />
+
+    <LinearLayout
+        android:id="@+id/popup_avatar_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_size"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextView"
+            android:drawableLeft="@mipmap/icon_gallery"
+            android:drawablePadding="10dp"
+            android:drawableStart="@mipmap/icon_gallery"
+            android:text="@string/gallery"
+            android:textSize="@dimen/text_subhead" />
+    </LinearLayout>
+
+    <ImageView style="@style/ImageViewHorizontal" />
+
+    <LinearLayout
+        android:id="@+id/popup_avatar_photo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_size"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextView"
+            android:drawableLeft="@mipmap/icon_camera"
+            android:drawablePadding="10dp"
+            android:drawableStart="@mipmap/icon_camera"
+            android:text="@string/photograph"
+            android:textSize="@dimen/text_subhead" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/popup_avatar_delete"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_size"
+        android:background="@color/blue"
+        android:contentDescription="@null"
+        android:scaleType="centerInside"
+        android:src="@mipmap/icon_fork" />
 
 </LinearLayout>

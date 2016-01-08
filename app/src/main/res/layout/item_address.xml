@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15dp"
+    android:background="@drawable/gray_border_bg"
+    android:paddingBottom="5dp">
+
+    <TextView
+        android:id="@+id/item_address_username"
+        style="@style/TextView"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/app_name"
+        android:textColor="@color/gray_dark"
+        android:textSize="@dimen/text_body" />
+
+    <TextView
+        android:id="@+id/item_address_phone"
+        style="@style/TextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/app_name"
+        android:textColor="@color/gray_dark"
+        android:textSize="@dimen/text_body" />
+
+    <TextView
+        android:id="@+id/item_address"
+        style="@style/TextView"
+        android:layout_below="@+id/item_address_username"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/app_name"
+        android:textSize="@dimen/text_subhead" />
+
+    <ImageView
+        style="@style/ImageViewHorizontal"
+        android:layout_below="@+id/item_address"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+    <CheckBox
+        android:id="@+id/item_address_default"
+        style="@style/TextView"
+        android:layout_below="@+id/item_address"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:button="@drawable/check_selector"
+        android:padding="5dp"
+        android:text="@string/default_address"
+        android:textSize="@dimen/text_body" />
+
+    <TextView
+        android:id="@+id/item_address_edit"
+        style="@style/TextView"
+        android:layout_alignBottom="@id/item_address_default"
+        android:layout_alignTop="@id/item_address_default"
+        android:layout_below="@+id/item_address"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/item_address_delete"
+        android:layout_toStartOf="@+id/item_address_delete"
+        android:drawableLeft="@mipmap/icon_edit"
+        android:drawablePadding="5dp"
+        android:drawableStart="@mipmap/icon_edit"
+        android:text="@string/edit"
+        android:textSize="@dimen/text_body" />
+
+    <TextView
+        android:id="@+id/item_address_delete"
+        style="@style/TextView"
+        android:layout_alignBottom="@id/item_address_default"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/item_address_default"
+        android:layout_below="@+id/item_address"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:drawableLeft="@mipmap/icon_delete"
+        android:drawablePadding="5dp"
+        android:drawableStart="@mipmap/icon_delete"
+        android:text="@string/delete"
+        android:textSize="@dimen/text_body" />
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/include_toolbar" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/address_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0" />
+
+    <FrameLayout
+        android:id="@+id/address_add"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_size"
+        android:layout_gravity="bottom"
+        android:background="@color/blue">
+
+        <TextView
+            style="@style/TextView"
+            android:layout_gravity="center"
+            android:drawableLeft="@mipmap/icon_add_white"
+            android:drawablePadding="5dp"
+            android:drawableStart="@mipmap/icon_add_white"
+            android:text="@string/new_address"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_subhead" />
+    </FrameLayout>
+
+
+</LinearLayout>

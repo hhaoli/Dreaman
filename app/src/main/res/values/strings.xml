@@ -79,5 +79,20 @@
     <string name="bound_phone">绑定手机</string>
     <string name="determine">确定</string>
     <string name="congratulations_cellphone_success">恭喜你,手机绑定成功!</string>
+    <string name="photograph">拍照</string>
+    <string name="gallery">相册</string>
+    <string name="nickname_description">以英文字母或者汉字开头,限4&#8211;16个字符,一个汉字为两个字符\n此昵称非会员登录名,仅在一起买、好友等场景显示</string>
+    <string name="new_address">新建地址</string>
+    <string name="delete">删除</string>
+    <string name="default_address">默认地址</string>
+    <string name="edit">编辑</string>
+    <string name="consignee">收货人</string>
+    <string name="area">所在地区</string>
+    <string name="detailed_address">详细地址</string>
+    <string name="check_all">全选</string>
+    <string name="total">总计</string>
+    <string name="excluding_freight">不含运费</string>
+    <string name="settlement">结算</string>
+    <string name="complete">完成</string>
 
 </resources>

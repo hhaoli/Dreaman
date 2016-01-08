@@ -15,7 +15,7 @@ public class StringUtils {
         StringBuffer bf = new StringBuffer("");
         bf.append(phone.substring(0, 3));
         bf.append("****");
-        bf.append(phone.substring(6, 10));
+        bf.append(phone.substring(7, 11));
         return bf.toString();
     }
 }

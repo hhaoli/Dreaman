@@ -1,7 +1,6 @@
 package com.admin.app.view;
 
 import android.app.Activity;
-import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.ImageView;
@@ -61,9 +60,21 @@ public class TitleBuilder {
         return this;
     }
 
+    public TitleBuilder setLeftText(int resId) {
+        tv_left.setVisibility(resId > 0 ? View.VISIBLE : View.GONE);
+        tv_left.setText(resId);
+        return this;
+    }
+
     public TitleBuilder setRightText(String text) {
         tv_right.setVisibility(TextUtils.isEmpty(text) ? View.GONE : View.VISIBLE);
         tv_right.setText(text);
+        return this;
+    }
+
+    public TitleBuilder setRightText(int resId) {
+        tv_right.setVisibility(resId > 0 ? View.VISIBLE : View.GONE);
+        tv_right.setText(resId);
         return this;
     }
 
@@ -87,20 +98,14 @@ public class TitleBuilder {
     }
 
     public TitleBuilder setLeftOnClickListener(View.OnClickListener listener) {
-        if (iv_left.getVisibility() == View.VISIBLE) {
-            iv_left.setOnClickListener(listener);
-        } else if (tv_left.getVisibility() == View.VISIBLE) {
-            tv_left.setOnClickListener(listener);
-        }
+        iv_left.setOnClickListener(listener);
+        tv_left.setOnClickListener(listener);
         return this;
     }
 
     public TitleBuilder setRightOnClickListener(View.OnClickListener listener) {
-        if (iv_right.getVisibility() == View.VISIBLE) {
-            iv_right.setOnClickListener(listener);
-        } else if (tv_right.getVisibility() == View.VISIBLE) {
-            tv_right.setOnClickListener(listener);
-        }
+        iv_right.setOnClickListener(listener);
+        tv_right.setOnClickListener(listener);
         return this;
     }
 }

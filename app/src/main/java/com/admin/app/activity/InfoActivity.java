@@ -4,12 +4,16 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.RadioGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.admin.app.R;
+import com.admin.app.util.ToastUtils;
 import com.admin.app.view.CircleImageView;
+import com.admin.app.view.PopupView;
 import com.admin.app.view.TitleBuilder;
 
 /**
@@ -27,6 +31,10 @@ public class InfoActivity extends BaseActivity implements View.OnClickListener, 
     private RadioGroup mRadioGroup;
     private RelativeLayout mBtnAddress;
     private TextView mSave;
+    private PopupView mPopupView;
+    private LinearLayout mBtnGallery;
+    private LinearLayout mBtnPhoto;
+    private ImageView mBtnDelete;
 
     public static void launch(Activity activity) {
         Intent intent = new Intent(activity, InfoActivity.class);
@@ -48,7 +56,6 @@ public class InfoActivity extends BaseActivity implements View.OnClickListener, 
         mRadioGroup = findViewByID(R.id.info_sex);
         mBtnAddress = findViewByID(R.id.info_btn_address);
         mSave = findViewByID(R.id.info_save);
-
     }
 
     @Override
@@ -75,16 +82,40 @@ public class InfoActivity extends BaseActivity implements View.OnClickListener, 
                 showAvatar();
                 break;
             case R.id.info_btn_username:
+                NicknameActivity.launch(this);
                 break;
             case R.id.info_btn_address:
+                AddressListActivity.launch(this);
                 break;
             case R.id.info_save:
+                break;
+            case R.id.popup_avatar_gallery:
+                mPopupView.dismiss();
+                ToastUtils.show("s");
+                break;
+            case R.id.popup_avatar_photo:
+                mPopupView.dismiss();
+                ToastUtils.show("ss");
+                break;
+            case R.id.popup_avatar_delete:
+                mPopupView.dismiss();
+                ToastUtils.show("sss");
                 break;
         }
     }
 
     private void showAvatar() {
-        View view = View.inflate(this, R.layout.popup_area, null);
+        View view = View.inflate(this, R.layout.popup_avatar, null);
+        mBtnGallery = (LinearLayout) view.findViewById(R.id.popup_avatar_gallery);
+        mBtnPhoto = (LinearLayout) view.findViewById(R.id.popup_avatar_photo);
+        mBtnDelete = (ImageView) view.findViewById(R.id.popup_avatar_delete);
+        mBtnGallery.setOnClickListener(this);
+        mBtnPhoto.setOnClickListener(this);
+        mBtnDelete.setOnClickListener(this);
+        mPopupView = new PopupView(this, R.style.PopupViewTheme_Default, view);
+        mPopupView.isTop(false);
+        mPopupView.setAnimation(R.style.PopupViewBottomAnimation);
+        mPopupView.showBottomView(true);
     }
 
     @Override

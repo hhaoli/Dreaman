@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shopping_cart_delete_view"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolbar_size"
+    android:layout_gravity="bottom"
+    android:background="@color/gray_bg"
+    android:orientation="horizontal"
+    android:visibility="gone">
+
+    <CheckBox
+        android:id="@+id/shopping_cart_delete_check"
+        style="@style/TextView"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:button="@null"
+        android:drawableLeft="@drawable/icon_tick_white_circle_selector"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/icon_tick_white_circle_selector"
+        android:text="@string/check_all"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_subhead" />
+
+
+    <TextView
+        android:id="@+id/shopping_cart_delete"
+        style="@style/TextView"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/blue"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="@string/delete"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_subhead" />
+
+</RelativeLayout>
