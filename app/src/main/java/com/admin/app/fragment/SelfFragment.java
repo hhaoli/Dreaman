@@ -8,6 +8,7 @@ import android.widget.TextView;
 import com.admin.app.R;
 import com.admin.app.activity.ChangePasswordActivity;
 import com.admin.app.activity.LoginActivity;
+import com.admin.app.activity.CollectActivity;
 import com.admin.app.activity.SettingActivity;
 import com.admin.app.activity.ShoppingCartActivity;
 import com.admin.app.util.ToastUtils;
@@ -124,10 +125,13 @@ public class SelfFragment extends BaseFragment implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.self_header1_btn_product:
+                CollectActivity.launch(mActivity, CollectActivity.PRODUCT);
                 break;
             case R.id.self_header1_btn_shop:
+                CollectActivity.launch(mActivity, CollectActivity.SHOP);
                 break;
             case R.id.self_header1_btn_history:
+                CollectActivity.launch(mActivity, CollectActivity.HISTORY);
                 break;
             case R.id.self_header2_icon:
                 break;
@@ -139,7 +143,6 @@ public class SelfFragment extends BaseFragment implements View.OnClickListener {
                 break;
             case R.id.self_payment:
                 ToastUtils.show(R.string.pending_payment);
-                ShoppingCartActivity.launch(mActivity);
                 break;
             case R.id.self_used:
                 ToastUtils.show(R.string.to_be_used);

@@ -14,6 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.admin.app.R;
+import com.admin.app.activity.ShoppingCartActivity;
 import com.admin.app.adapter.HomeAdapter;
 import com.admin.app.adapter.TogetherAdapter;
 import com.admin.app.interfaces.OnItemChildClickListener;
@@ -145,7 +146,7 @@ public class TogetherFragment extends BaseFragment implements AppBarLayout.OnOff
                 ToastUtils.show("qr_code");
                 break;
             case R.id.together_shopping_cart:
-                ToastUtils.show("shopping_cart");
+                ShoppingCartActivity.launch(mActivity);
                 break;
             case R.id.together_news:
                 ToastUtils.show("news");

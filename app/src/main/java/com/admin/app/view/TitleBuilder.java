@@ -98,13 +98,18 @@ public class TitleBuilder {
     }
 
     public TitleBuilder setLeftOnClickListener(View.OnClickListener listener) {
-        iv_left.setOnClickListener(listener);
-        tv_left.setOnClickListener(listener);
+        if (iv_left.getVisibility() == View.VISIBLE) {
+            iv_left.setOnClickListener(listener);
+        } else {
+            tv_left.setOnClickListener(listener);
+        }
         return this;
     }
 
     public TitleBuilder setRightOnClickListener(View.OnClickListener listener) {
-        iv_right.setOnClickListener(listener);
+        if (iv_right.getVisibility() == View.VISIBLE) {
+            iv_right.setOnClickListener(listener);
+        }
         tv_right.setOnClickListener(listener);
         return this;
     }

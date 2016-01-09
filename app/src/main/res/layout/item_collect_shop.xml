@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="15dp"
+              android:background="@drawable/gray_border_bg"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <ImageView
+            android:id="@+id/item_collect_shop_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@null"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/item_collect_shop_name"
+            style="@style/TextView"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/item_collect_shop_icon"
+            android:layout_toRightOf="@id/item_collect_shop_icon"
+            android:textColor="@color/gray_dark"
+            android:textSize="@dimen/text_body"/>
+
+        <CheckBox
+            android:id="@+id/item_collect_shop_check"
+            style="@style/TextView"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:button="@null"
+            android:drawableLeft="@drawable/icon_tick_gray_circle_selector"
+            android:drawableStart="@drawable/icon_tick_gray_circle_selector"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:id="@+id/item_collect_shop_grade"
+            style="@style/TextView"
+            android:layout_centerVertical="true"
+            android:textColor="@color/yellow"/>
+
+        <TextView
+            android:id="@+id/item_collect_shop_sales"
+            style="@style/TextView"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/item_collect_shop_grade"
+            android:layout_toRightOf="@id/item_collect_shop_grade"/>
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/item_collect_shop_sales"
+            android:layout_toRightOf="@id/item_collect_shop_sales"
+            android:contentDescription="@null"
+            android:src="@color/gray_light"/>
+
+        <TextView
+            android:id="@+id/item_collect_shop_number"
+            style="@style/TextView"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_toEndOf="@id/item_collect_shop_sales"
+            android:layout_toRightOf="@id/item_collect_shop_sales"/>
+
+        <TextView
+            android:id="@+id/item_collect_shop_address"
+            style="@style/TextView"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+</LinearLayout>

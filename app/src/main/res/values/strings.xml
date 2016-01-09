@@ -94,5 +94,6 @@
     <string name="excluding_freight">不含运费</string>
     <string name="settlement">结算</string>
     <string name="complete">完成</string>
+    <string name="cancel">取消</string>
 
 </resources>
